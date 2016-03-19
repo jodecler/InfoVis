@@ -32,7 +32,7 @@
 <body>
     <script>
         var margin = {top:50, right:0, bottom:50, left:50},
-            width  = 1600,
+            width  = 3200,
             height = 500;
 
         var svg = d3.select("body")
@@ -79,7 +79,7 @@
             .attr("x", function(d){ return xScale(d["jaar"]); })
             .attr("y", function(d){ return yScale(d["aantal"]); })
             .attr("height", function(d){ return height - margin.top - margin.bottom - yScale(d["aantal"]); })
-            .attr("width", "20px" );
+            .attr("width", "40px" );
             
         //adding y axis to the left of the chart
         svg.append("g")
@@ -107,7 +107,6 @@
             .data(data)
             .enter()
             .append("text")
-            .style("textAlign", "center")
             .attr("class", "textlabel")
             .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
             .attr("y", function(d){ return yScale(d["aantal"]) - 3; })
