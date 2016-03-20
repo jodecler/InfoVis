@@ -14,16 +14,19 @@
 
 <body>
     <script>
+        //Set margins
         var margin = {top:100, right:0, bottom:50, left:50},
             width  = 3200,
             height = 500;
 
+        //add object to body where graph will be
         var svg = d3.select("body")
             .append("svg")
             .attr("width", "100%")
             .attr("height", "100%")
             .attr("viewBox", "0 0 " + width + " " + height * 2);
         
+        //set scales x and y axis
         var yScale = d3.scale.linear()
             .range([height - margin.top - margin.bottom, 0]);
 
@@ -33,32 +36,35 @@
         var xAxis = d3.svg.axis()
             .scale(xScale)
             .orient("bottom");
-
-        var yAxis = d3.svg.axis()
+        
         var yAxis = d3.svg.axis()
             .scale(yScale)
             .orient("left")
-        .ticks(10);
+            .ticks(10);
 
+        //data out of file
         d3.csv("valuesVisualisationCSV.csv", function(error, data){
             data = data.map(function(d){ 
                 d["aantal"] = +d["aantal"]; 
                 return d;
             });   
             
-        //yscale's domain is from zero to the maximum "Median Price" in your data
+        //yscale's domain is from zero to the maximum refugees
         yScale.domain([0, d3.max(data, function(d){ return d["aantal"]; })]);
 
-        //xscale is unique values in your data (Age Group, since they are all different)
+        //xscale is years
         xScale.domain(data.map(function(d){ return d["jaar"]; }));
         var tip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function(d) {
-            return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.aantal + "</span>";
+                return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.aantal + "</span>";
         })
         
-        svg.call(tip);       
+        //for the hover
+        svg.call(tip);  
+            
+        //ad the actual bars
         svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
             .selectAll(".bar")
@@ -85,28 +91,30 @@
             .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
             .call(xAxis)
             .selectAll("text")  
-            .style("text-anchor", "end")
+            .style("text-anchor", "middle")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", "rotate(-90)" )
             .style("text-anchor", "end");   
             
-            
-            svg.append("text")
-                .attr("class", "x label")
-                .attr("text-anchor", "end")
-                .attr("x", width / 2)
-                .attr("y", height + 5)
-                .style("font-weight", "bold")
-                .text("Years");
+        //give title to axes   
+        svg.append("text")
+            .attr("class", "x label")
+            .attr("text-anchor", "end")
+            .attr("x", width / 2)
+            .attr("y", height + 5)
+            .style("font-weight", "bold")
+            .text("Year");
 
-            svg.append("text")
-    .attr("class", "y label")
-    .attr("text-anchor", "end")
-    .attr("y", 6)
-    .attr("dy", ".75em")
-    .attr("transform", "rotate(-90)")
-    .text("Number of refugees");
+        svg.append("text")
+            .attr("class", "y label")
+            .attr("text-anchor", "end")
+            .attr("y", 10)
+            .attr("dy", ".75em")
+            .attr("transform", "rotate(-90)")
+            .text("Number of refugees")
+            .style("font-weight", "bold");
+
         //add text labels to the top of each bar
         svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
@@ -117,82 +125,15 @@
             .attr("class", "textlabel")
             .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
             .attr("y", function(d){ return yScale(d["aantal"]) - 3; })
-            .text(function(d){ return (d["aantal"]); })
+            //.text(function(d){ return (d["aantal"]); })
 
-            //code in next sections will go here.
-        //adding a label at the top of the chart
+        //graph title
         svg.append("g")
-            .attr("transform", "translate(" + (width/2) + ", 15)")
+            .attr("transform", "translate(" + (width/2) + ", 45)")
             .append("text")
             .text("Number of refugees in Belgium during the years")
-            .style({"text-anchor":"middle", "font-family":"Arial", "font-weight":"800"});
-
+            .style({"text-anchor":"middle", "font-family":"Arial", "font-weight":"800", "font-size":"45px"});
         })
-        //test
-        
-        
-       /* var width = 500,
-            height = 500,
-            padding = 50;
-        
-        d3.csv("valuesVisualisationCSV.csv", function(data) {      
-
-            var map = data.map(function (i) {return i.aantal;})
-            var years = data.map(function (i) {return i.jaar;})
-            
-        
-           
-            var x = d3.scale.linear()
-                .domain([0, d3.max(map)])
-                .range([0,width])
-                ;
-            
-            var xAxis = d3.svg.axis()
-                .scale(x)
-                .orient("bottom");
-            
-           var histogram = d3.layout.histogram()
-            .bins(x.ticks(60))
-            (map)
-                
-            var y = d3.scale.linear()
-                .domain([0, d3.max(histogram.map(function (i) {return i.length;}))])
-                .range([0, height]);
-            
-            var canvas = d3.select("body").append("svg")
-                .attr("width", width)
-                .attr("height", height + padding)
-                .append("g")
-                    .attr("transform", "translate(20,0)");
-            
-             var group = canvas.append("g")
-                .attr("transform", "translate(0," + height + ")")
-                .call(xAxis);
-            
-            var bars = canvas.selectAll(".bar")
-                .data(histogram)
-                .enter()
-                .append("g")
-            
-            bars.append("rect")
-                .attr("x", function(d) {return x(d.x);})
-                .attr("y", function(d) {return 500 - y(d.y);})
-                .attr("width", function(d) {return x(d.dx);})
-                .attr("height", function (d) {return y(d.y);})
-                .attr("fill", "grey")
-            
-            bars.append("text")
-                .attr("x", function(d) { return x(d.x);})
-                .attr("y", function (d) { return 500 - y(d.y);})
-                .attr("dy", "20px")
-                .attr("dx", function(d) {return x(d.dx)/ 2; })
-                .attr("fill", "#fff")
-                .attr("text-anchor", "middle")
-                .text(function (d) {return d.y;})
-                
-        })
-       
-               */
     </script>
 </body>
 </html>
