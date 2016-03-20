@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>Histogram</title>
+    <!-- d3 javascript -->
     <script src="d3.js" charset="utf-8"></script>
-    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!-- for the tooltip -->
+    <script src="d3tooltip.js" charset="utf-8" ></script>
+    
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 
 <body>
     <script>
-        var margin = {top:50, right:0, bottom:50, left:50},
+        var margin = {top:100, right:0, bottom:50, left:50},
             width  = 3200,
             height = 500;
 
@@ -19,7 +22,7 @@
             .append("svg")
             .attr("width", "100%")
             .attr("height", "100%")
-            .attr("viewBox", "0 0 " + width + " " + height);
+            .attr("viewBox", "0 0 " + width + " " + height * 2);
         
         var yScale = d3.scale.linear()
             .range([height - margin.top - margin.bottom, 0]);
@@ -48,15 +51,16 @@
 
         //xscale is unique values in your data (Age Group, since they are all different)
         xScale.domain(data.map(function(d){ return d["jaar"]; }));
-         var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-    return "<strong>Frequency:</strong> <span style='color:yellow'>" + d.aantal + "</span>";
-  })
-svg.call(tip);       
-       svg.append("g")
-           .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+        var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(function(d) {
+            return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.aantal + "</span>";
+        })
+        
+        svg.call(tip);       
+        svg.append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
             .selectAll(".bar")
             .data(data)
             .enter()
@@ -64,11 +68,10 @@ svg.call(tip);
             .attr("class", "bar")
             .attr("x", function(d){ return xScale(d["jaar"]); })
             .attr("y", function(d){ return yScale(d["aantal"]); })
-            .attr("height", function(d){ return height - margin.top - margin.bottom - yScale(d["aantal"]); })
+            .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["aantal"]); })
             .attr("width", "40px" )
-       
-        .on('mouseover', tip.show)
-      .on('mouseout', tip.hide);;
+            .on('mouseover', tip.show)
+            .on('mouseout', tip.hide);;
             
         //adding y axis to the left of the chart
         svg.append("g")
@@ -86,9 +89,24 @@ svg.call(tip);
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", "rotate(-90)" )
-            .style("text-anchor", "end");         
+            .style("text-anchor", "end");   
             
+            
+            svg.append("text")
+                .attr("class", "x label")
+                .attr("text-anchor", "end")
+                .attr("x", width / 2)
+                .attr("y", height + 5)
+                .style("font-weight", "bold")
+                .text("Years");
 
+            svg.append("text")
+    .attr("class", "y label")
+    .attr("text-anchor", "end")
+    .attr("y", 6)
+    .attr("dy", ".75em")
+    .attr("transform", "rotate(-90)")
+    .text("Number of refugees");
         //add text labels to the top of each bar
         svg.append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
