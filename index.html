@@ -143,20 +143,48 @@
             var select = d3.select("body")
                 .append("div")
                 .append("select")
-        
-            select.on("change", function (d) {
-                var value = d3.select(this).property("value");
-                alert(value);
-            });
+            .attr("id", "year1");
         
             select.selectAll("option")
                 .data(data)
                 .enter()
                 .append("option")
                 .attr("value", function (d) {
-                    return d.jaar;
+                    return d.aantal;
                     })
                 .text(function(d) {return d.jaar;});
+            
+             var select2 = d3.select("body")
+                .append("div")
+                .append("select")
+            
+                .attr("id", "year2");
+            
+            select2.selectAll("option")
+                .data(data)
+                .enter()
+                .append("option")
+                .attr("value", function (d) {
+                    return d.aantal;
+                    })
+                .text(function(d) {return d.jaar;});
+            
+            var result = d3.select("body")
+                                    .append("div")
+                                    .append("p")
+            var button = d3.select("body")
+                .append("div")
+                .append("button")
+                .text("See difference between years")
+                .on("click", function(){
+                    
+                    var value1 = d3.select("#year1").node().value; 
+                    var value2 = d3.select("#year2").node().value; 
+                    //niet zeker van deze formule
+                    var difference = value1 / value2 ;
+                    console.log("Add Market button clicked " + difference);
+                    result.text(difference)
+                            })
                 
         });  
     </script>
