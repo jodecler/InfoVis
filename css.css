@@ -66,3 +66,7 @@ body{
   top: 100%;
   left: 0;
 }
+
+tr [colspan="2"] {
+    text-align: center;
+}

@@ -140,10 +140,7 @@
         
         d3.csv("valuesVisualisationCSV.csv", function(error, data){  
              
-            var select = d3.select("body")
-                .append("div")
-                .append("select")
-                .attr("id", "year1");
+            var select = d3.select("#year1");
         
             select.selectAll("option")
                 .data(data)
@@ -154,10 +151,7 @@
                     })
                 .text(function(d) {return d.jaar;});
             
-             var select2 = d3.select("body")
-                .append("div")
-                .append("select")
-                .attr("id", "year2");
+             var select2 = d3.select("#year2")
             
             select2.selectAll("option")
                 .data(data)
@@ -168,13 +162,9 @@
                     })
                 .text(function(d) {return d.jaar;});
             
-            var result = d3.select("body")
-                                    .append("div")
-                                    .append("p")
-            var button = d3.select("body")
-                .append("div")
-                .append("button")
-                .text("See difference between years")
+            var result = d3.select("#result");
+            
+            var button = d3.select("#betweenYears")
                 .on("click", function(){
                     
                     var value1 = d3.select("#year1").node().value; 
@@ -187,6 +177,22 @@
                 
         });  
     </script>
+    
+    <div>
+    <table>
+        <tr>
+        <td><select id="year1" /></td>
+            <td><select id="year2" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="betweenYears" >See difference between years </button></td>
+        </tr>
+        <tr>
+        <td><p>The difference between the two years is: </p></td>
+            <td><p id="result"/></td>
+        </tr>
+        </table>
+    </div>
     
 </body>
 </html>
