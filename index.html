@@ -38,7 +38,7 @@
     
     <script>
         //Set margins
-        var margin = {top:30, right:30, bottom:80, left:90},
+        var margin = {top:30, right:30, bottom:150, left:150},
             width  = 3200,
             height = 500,
             padding = 100;
@@ -121,22 +121,19 @@
             
         //give title to axes   
         svg.append("text")
-            .attr("class", "x label")
+            .attr("class", "labelGraph")
             .attr("text-anchor", "end")
             .attr("x", width / 2)
-            .attr("y", height + 80)
-            .style("font-size", "50px")
-            .style("font-weight", "bold")
+            .attr("y", height)
             .text("Year");
 
         svg.append("text")
-            .attr("class", "y label")
+            .attr("class", "labelGraph")
             .attr("text-anchor", "end")
-            .attr("y", 10)
+            .attr("y", 20)
             .attr("dy", ".75em")
-            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)") 
+            .attr("transform", "translate("+ (padding / 40 - 20) +","+(height / 50 )+")rotate(-90)") 
             .text("Number of refugees")
-            .style("font-weight", "bold");
 
 
         //add text labels to the top of each bar
@@ -149,7 +146,6 @@
             .attr("class", "textlabel")
             .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
             .attr("y", function(d){ return yScale(d["aantal"]) - 3; })
-            //.text(function(d){ return (d["aantal"]); })
 
         //graph title
         svg.append("g")
