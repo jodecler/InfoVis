@@ -1,7 +1,8 @@
 .axis text{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 25px;
     text-anchor: end;
+    border: none;
 }
 .axis path{
     fill:none;
@@ -16,21 +17,25 @@
 }*/
 .textlabel{
     font-family: Helvetica, Arial, sans-serif;
-    font-size:14px;
+    font-size:15px;
     text-anchor: middle;
 }
 
 .bar {
-  fill: orange;
+  fill: lightblue;
 
 }
 
 .bar:hover {
-  fill: orangered ;
+  fill: #e9fe14 ;
 }
 
 .x.axis path {
   display: none;
+}
+
+body{
+    background-color: beige;
 }
 
 .d3-tip {
