@@ -12,6 +12,30 @@
 </head>
 
 <body>
+    
+    <div >
+        <p id="title">Graph number of refugees from 1951 till 2014</p>
+        <div id="graphdiv"/div>
+    </div>
+    <div>
+        <p id="title">See the difference in refugees between two years</p>
+    <table>
+        <tr>
+        <td><select id="year1" /></td>
+            <td><select id="year2" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="betweenYears" >See difference between years </button></td>
+        </tr>
+        <tr>
+        <td><p>The difference between the two years is: </p></td>
+            <td><p id="result"/></td>
+        </tr>
+        </table>
+    </div>
+    
+    
+    
     <script>
         //Set margins
         var margin = {top:100, right:0, bottom:50, left:90},
@@ -19,7 +43,7 @@
             height = 500;
 
         //add object to body where graph will be
-        var svg = d3.select("body")
+        var svg = d3.select("#graphdiv")
             .append("svg")
             .attr("width", "100%")
             .attr("height", "100%")
@@ -178,21 +202,6 @@
         });  
     </script>
     
-    <div>
-    <table>
-        <tr>
-        <td><select id="year1" /></td>
-            <td><select id="year2" /></td>
-        </tr>
-        <tr>
-            <td colspan="2"><button id="betweenYears" >See difference between years </button></td>
-        </tr>
-        <tr>
-        <td><p>The difference between the two years is: </p></td>
-            <td><p id="result"/></td>
-        </tr>
-        </table>
-    </div>
     
 </body>
 </html>
