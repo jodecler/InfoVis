@@ -12,18 +12,41 @@
 </head>
 
 <body>
+    
+    <div >
+        <p id="title">Graph number of refugees from 1951 till 2014</p>
+        <div id="graphdiv"/div>
+    </div>
+    <div>
+        <p id="title">See the difference in refugees between two years</p>
+    <table>
+        <tr>
+        <td><select id="year1" /></td>
+            <td><select id="year2" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="betweenYears" >See difference between years </button></td>
+        </tr>
+        <tr>
+        <td><p>The difference between the two years is: </p></td>
+            <td><p id="result"/></td>
+        </tr>
+        </table>
+    </div>
+    
+    
+    
     <script>
         //Set margins
-        var margin = {top:100, right:0, bottom:50, left:90},
+        var margin = {top:30, right:30, bottom:150, left:150},
             width  = 3200,
-            height = 500;
+            height = 500,
+            padding = 100;
 
         //add object to body where graph will be
-        var svg = d3.select("body")
+        var svg = d3.select("#graphdiv")
             .append("svg")
-            .attr("width", "100%")
-            .attr("height", "100%")
-            .attr("viewBox", "0 0 " + width + " " + height * 2);
+            .attr("viewBox", "0 0 " + width + " " + height);
         
         //set scales x and y axis
         var yScale = d3.scale.linear()
@@ -31,7 +54,7 @@
 
         var xScale = d3.scale.ordinal()
             .rangeRoundBands([0, width - margin.right - margin.left], .1);
-            //test voor yoni
+        
         var xAxis = d3.svg.axis()
             .scale(xScale)
             .orient("bottom");
@@ -98,21 +121,20 @@
             
         //give title to axes   
         svg.append("text")
-            .attr("class", "x label")
+            .attr("class", "labelGraph")
             .attr("text-anchor", "end")
             .attr("x", width / 2)
-            .attr("y", height + 5)
-            .style("font-weight", "bold")
+            .attr("y", height)
             .text("Year");
 
         svg.append("text")
-            .attr("class", "y label")
+            .attr("class", "labelGraph")
             .attr("text-anchor", "end")
-            .attr("y", 10)
+            .attr("y", 20)
             .attr("dy", ".75em")
-            .attr("transform", "rotate(-90)")
+            .attr("transform", "translate("+ (padding / 40 - 20) +","+(height / 50 )+")rotate(-90)") 
             .text("Number of refugees")
-            .style("font-weight", "bold");
+
 
         //add text labels to the top of each bar
         svg.append("g")
@@ -124,7 +146,6 @@
             .attr("class", "textlabel")
             .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
             .attr("y", function(d){ return yScale(d["aantal"]) - 3; })
-            //.text(function(d){ return (d["aantal"]); })
 
         //graph title
         svg.append("g")
@@ -140,10 +161,7 @@
         
         d3.csv("valuesVisualisationCSV.csv", function(error, data){  
              
-            var select = d3.select("body")
-                .append("div")
-                .append("select")
-            .attr("id", "year1");
+            var select = d3.select("#year1");
         
             select.selectAll("option")
                 .data(data)
@@ -154,11 +172,7 @@
                     })
                 .text(function(d) {return d.jaar;});
             
-             var select2 = d3.select("body")
-                .append("div")
-                .append("select")
-            
-                .attr("id", "year2");
+             var select2 = d3.select("#year2")
             
             select2.selectAll("option")
                 .data(data)
@@ -169,13 +183,9 @@
                     })
                 .text(function(d) {return d.jaar;});
             
-            var result = d3.select("body")
-                                    .append("div")
-                                    .append("p")
-            var button = d3.select("body")
-                .append("div")
-                .append("button")
-                .text("See difference between years")
+            var result = d3.select("#result");
+            
+            var button = d3.select("#betweenYears")
                 .on("click", function(){
                     
                     var value1 = d3.select("#year1").node().value; 
@@ -188,6 +198,7 @@
                 
         });  
     </script>
+    
     
 </body>
 </html>

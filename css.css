@@ -66,3 +66,18 @@ body{
   top: 100%;
   left: 0;
 }
+
+tr [colspan="2"] {
+    text-align: center;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.labelGraph{
+    font-size: 50px;
+    font-weight: bold;
+}
