@@ -14,7 +14,7 @@
 <body>
     <script>
         //Set margins
-        var margin = {top:100, right:0, bottom:50, left:50},
+        var margin = {top:100, right:0, bottom:50, left:90},
             width  = 3200,
             height = 500;
 
@@ -131,7 +131,7 @@
             .attr("transform", "translate(" + (width/2) + ", 45)")
             .append("text")
             .text("Number of refugees in Belgium during the years")
-            .style({"text-anchor":"middle", "font-family":"Arial", "font-weight":"800", "font-size":"45px"});
+            .style({"text-anchor":"middle", "font-family":"Verdana", "font-weight":"800", "font-size":"50px"});
         })
     </script>
 
@@ -143,55 +143,48 @@
             var select = d3.select("body")
                 .append("div")
                 .append("select")
-                .attr("id", "year1");
+        
+            select.on("change", function (d) {
+                var value = d3.select(this).property("value");
+                alert(value);
+            });
         
             select.selectAll("option")
                 .data(data)
                 .enter()
                 .append("option")
                 .attr("value", function (d) {
-                    return d.aantal; //this is the number of refugees
+                    return d.jaar;
                     })
                 .text(function(d) {return d.jaar;});
-            
-            var select2 = d3.select("body")
-                .append("div")
-                .append("select")
-            
-                .attr("id", "year2");
-            
-            select2.selectAll("option")
-                .data(data)
-                .enter()
-                .append("option")
-                .attr("value", function (d) {
-                    return d.aantal;
-                    })
-                .text(function(d) {return d.jaar;});
-            
-            var result = d3.select("body")
-                                    .append("div")
-                                    .append("p")
-            var button = d3.select("body")
-                .append("div")
-                .append("button")
-                .text("See difference between years")
-                .on("click", function(){
-                    
-                    var value1 = d3.select("#year1").node().value; 
-                    var value2 = d3.select("#year2").node().value; 
-                    //niet zeker van deze formule
-                    var difference = value1 / value2 ;
-                    console.log("Add Market button clicked " + difference);
-                    result.text(difference)
-                            })
-            
+                
         });  
     </script>
-
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
