@@ -8,7 +8,6 @@
     <script src="d3.js" charset="utf-8"></script>
     <!-- for the tooltip -->
     <script src="d3tooltip.js" charset="utf-8" ></script>
-    
     <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 
@@ -135,5 +134,54 @@
             .style({"text-anchor":"middle", "font-family":"Arial", "font-weight":"800", "font-size":"45px"});
         })
     </script>
+
+    <script>
+        //script for the dropdownboxes
+        
+        d3.csv("valuesVisualisationCSV.csv", function(error, data){  
+             
+            var select = d3.select("body")
+                .append("div")
+                .append("select")
+        
+            select.on("change", function (d) {
+                var value = d3.select(this).property("value");
+                alert(value);
+            });
+        
+            select.selectAll("option")
+                .data(data)
+                .enter()
+                .append("option")
+                .attr("value", function (d) {
+                    return d.jaar;
+                    })
+                .text(function(d) {return d.jaar;});
+                
+        });  
+    </script>
+    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
