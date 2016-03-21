@@ -38,16 +38,15 @@
     
     <script>
         //Set margins
-        var margin = {top:100, right:0, bottom:50, left:90},
+        var margin = {top:30, right:30, bottom:80, left:90},
             width  = 3200,
-            height = 500;
+            height = 500,
+            padding = 100;
 
         //add object to body where graph will be
         var svg = d3.select("#graphdiv")
             .append("svg")
-            .attr("width", "100%")
-            .attr("height", "100%")
-            .attr("viewBox", "0 0 " + width + " " + height * 2);
+            .attr("viewBox", "0 0 " + width + " " + height);
         
         //set scales x and y axis
         var yScale = d3.scale.linear()
@@ -55,7 +54,7 @@
 
         var xScale = d3.scale.ordinal()
             .rangeRoundBands([0, width - margin.right - margin.left], .1);
-            //test voor yoni
+        
         var xAxis = d3.svg.axis()
             .scale(xScale)
             .orient("bottom");
@@ -125,7 +124,8 @@
             .attr("class", "x label")
             .attr("text-anchor", "end")
             .attr("x", width / 2)
-            .attr("y", height + 5)
+            .attr("y", height + 80)
+            .style("font-size", "50px")
             .style("font-weight", "bold")
             .text("Year");
 
@@ -134,9 +134,10 @@
             .attr("text-anchor", "end")
             .attr("y", 10)
             .attr("dy", ".75em")
-            .attr("transform", "rotate(-90)")
+            .attr("transform", "translate("+ (padding/2) +","+(height/2)+")rotate(-90)") 
             .text("Number of refugees")
             .style("font-weight", "bold");
+
 
         //add text labels to the top of each bar
         svg.append("g")
