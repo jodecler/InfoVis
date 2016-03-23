@@ -12,11 +12,63 @@
 </head>
 
 <body>
-    
     <div >
         <p id="title">Graph number of refugees from 1951 till 2014</p>
         <div id="graphdiv"/div>
     </div>
+        
+    <div>
+         <p id="title">Where does the refugees come from?</p>
+        <table id="refugeesTable">
+            <th><p>Top 10 countries where the refugees of year</p> <p id="yearRefugees"/><p>come from: </p> </th>
+
+            <tr>
+                <td>Belgium
+                </td>
+            </tr>
+            <tr>
+                <td>Syria
+                </td>
+            </tr>
+            <tr>
+                <td>Belarus
+                </td>
+            </tr>
+            <tr>
+                <td>Egypt
+                </td>
+            </tr>
+            <tr>
+                <td>Italy
+                </td>
+            </tr>
+            <tr>
+                <td>Turkey
+                </td>
+            </tr>
+            <tr>
+                <td>Irak
+                </td>
+            </tr>
+            <tr>
+                <td>Greece
+                </td>
+            </tr>
+            <tr>
+                <td>France
+                </td>
+            </tr>
+            <tr>
+                <td>Spain
+                </td>
+            </tr>
+        </table> 
+    </div>
+        
+        
+        
+        
+        
     <div>
         <p id="title">See the difference in refugees between two years</p>
     <table>
@@ -31,13 +83,9 @@
         <td><p>The difference between the two years is: </p></td>
             <td><p id="result"/></td>
         </tr>
-        <tr><td><p>Countries with the most refugees: </p></td>
-            <td><select id="dropdownLanden" /></td>
-        </tr>
+        
         </table>
     </div>
-    
-    
     
     <script>
         //Set margins
@@ -102,7 +150,12 @@
             .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["aantal"]); })
             .attr("width", "40px" )
             .on('mouseover', tip.show)
-            .on('mouseout', tip.hide);;
+            .on('mouseout', tip.hide)
+            .on('click', function(d, i){
+                console.log(d.jaar);
+                var test = d3.select("#yearRefugees");
+                test.text(d.jaar);
+            })
             
         //adding y axis to the left of the chart
         svg.append("g")
@@ -189,6 +242,17 @@
             var select3 = d3.select("#countries")
             
             select3.selectAll("option")
+                .data(data)
+                .enter()
+                .append("option")
+                .attr("value", function (d){
+                    return d.aantal;
+                    })
+                .text(function(d) {return d.jaar});
+            
+            var selectLanden = d3.select("#dropdownLanden")
+            
+            selectLanden.selectAll("option")
                 .data(data)
                 .enter()
                 .append("option")
