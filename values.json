@@ -1,43 +1,53 @@
 [
   {
     "jaar":1951,
-    "aantal":55000
+    "aantal":55000,
+    "countries":"Croatia"
   },
   {
     "jaar":1952,
-    "aantal":53500
+    "aantal":53500,
+    "countries":"Serbia"
   },
   {
     "jaar":1953,
-    "aantal":53000
+    "aantal":53000,
+    "countries":"Greece"
   },
   {
     "jaar":1954,
-    "aantal":53000
+    "aantal":53000,
+    "countries":"Afghanistan"
   },
   {
     "jaar":1955,
-    "aantal":53000
+    "aantal":53000,
+    "countries":"Iraq"
   },
   {
     "jaar":1956,
-    "aantal":65000
+    "aantal":65000,
+    "countries":"Iran"
   },
   {
     "jaar":1957,
-    "aantal":69000
+    "aantal":69000,
+    "countries":"Pakistan"
   },
   {
     "jaar":1958,
-    "aantal":63000
+    "aantal":63000,
+    "countries":"Romania"
   },
   {
     "jaar":1959,
-    "aantal":58000
+    "aantal":58000,
+    "countries":"Bulgaria"
   },
   {
     "jaar":1960,
-    "aantal":55000
+    "aantal":55000,
+    "countries":"Poland"
   },
   {
     "jaar":1961,
