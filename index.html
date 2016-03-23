@@ -31,6 +31,9 @@
         <td><p>The difference between the two years is: </p></td>
             <td><p id="result"/></td>
         </tr>
+        <tr><td><p>Countries with the most refugees: </p></td>
+            <td><select id="dropdownLanden" /></td>
+        </tr>
         </table>
     </div>
     
@@ -183,13 +186,24 @@
                     })
                 .text(function(d) {return d.jaar;});
             
+            var select3 = d3.select("#countries")
+            
+            select3.selectAll("option")
+                .data(data)
+                .enter()
+                .append("option")
+                .attr("value", function (d){
+                    return d.aantal;
+                    })
+                .text(function(d) {return d.jaar});
+            
             var result = d3.select("#result");
             
             var button = d3.select("#betweenYears")
                 .on("click", function(){
                     
                     var value1 = d3.select("#year1").node().value; 
-                    var value2 = d3.select("#year2").node().value; 
+                    var value2 = d3.select("#year2").node().value;
                     //niet zeker van deze formule
                     var difference = value1 / value2 ;
                     console.log("Add Market button clicked " + difference);
