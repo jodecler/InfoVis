@@ -74,10 +74,19 @@ tr [colspan="2"] {
 #title {
     font-size: 20px;
     font-weight: bold;
+    color: #332100;
     
 }
 
 .labelGraph{
     font-size: 50px;
     font-weight: bold;
+    fill: #332100;
+}
+
+#refugeesTable{
+    border: solid;
+}
+th{
+    border-bottom: solid;
 }
