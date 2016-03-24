@@ -34,6 +34,14 @@
   display: none;
 }
 
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
 body{
     background-color: beige;
 }
@@ -90,3 +98,8 @@ tr [colspan="2"] {
 th{
     border-bottom: solid;
 }
+
+.top-buffer{
+    margin-top: 50px;
+}
+
