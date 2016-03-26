@@ -249,53 +249,27 @@
     </script>
 
     <script>
+        
         //script for the dropdownboxes
         
         d3.csv("valuesVisualisationCSV.csv", function(error, data){  
-             
-            var select = d3.select("#year1");
-        
-            select.selectAll("option")
-                .data(data)
-                .enter()
-                .append("option")
-                .attr("value", function (d) {
-                    return d.aantal;
-                    })
-                .text(function(d) {return d.jaar;});
             
-             var select2 = d3.select("#year2")
+            function fillYears( dropDownName){
+                var self = this;
+                var dropDown = d3.select(dropDownName)
+                    .selectAll("option")
+                    .data(data)
+                    .enter()
+                    .append("option")
+                    .attr("value", function (d) {
+                        return d.aantal;
+                        })
+                    .text(function(d) {return d.jaar;});
+            return dropDown;
+            }
             
-            select2.selectAll("option")
-                .data(data)
-                .enter()
-                .append("option")
-                .attr("value", function (d) {
-                    return d.aantal;
-                    })
-                .text(function(d) {return d.jaar;});
-            
-            var select3 = d3.select("#countries")
-            
-            select3.selectAll("option")
-                .data(data)
-                .enter()
-                .append("option")
-                .attr("value", function (d){
-                    return d.aantal;
-                    })
-                .text(function(d) {return d.jaar});
-            
-            var selectLanden = d3.select("#dropdownLanden")
-            
-            selectLanden.selectAll("option")
-                .data(data)
-                .enter()
-                .append("option")
-                .attr("value", function (d){
-                    return d.aantal;
-                    })
-                .text(function(d) {return d.jaar});
+            var  year1 = fillYears("#year1");
+            var year2 = fillYears("#year2");
             
             var result = d3.select("#result");
             
