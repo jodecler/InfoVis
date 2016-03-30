@@ -130,6 +130,8 @@
             height = 500,
             padding = 100;
 
+        
+        
         //add object to body where graph will be
         var svg = d3.select("#graphdiv")
             .append("svg")
@@ -154,12 +156,12 @@
         //data out of file
         d3.csv("valuesVisualisationCSV.csv", function(error, data){
             data = data.map(function(d){ 
-                d["aantal"] = +d["aantal"]; 
+                d["belgium"] = +d["belgium"]; 
                 return d;
             });   
             
         //yscale's domain is from zero to the maximum refugees
-        yScale.domain([0, d3.max(data, function(d){ return d["aantal"]; })]);
+        yScale.domain([0, d3.max(data, function(d){ return d["belgium"]; })]);
 
         //xscale is years
         xScale.domain(data.map(function(d){ return d["jaar"]; }));
@@ -167,7 +169,7 @@
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function(d) {
-                return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.aantal + "</span>";
+                return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.belgium + "</span>";
         })
         
         //for the hover
@@ -182,8 +184,9 @@
             .append("rect")
             .attr("class", "bar")
             .attr("x", function(d){ return xScale(d["jaar"]); })
-            .attr("y", function(d){ return yScale(d["aantal"]); })
-            .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["aantal"]); })
+            .attr("y", function(d){ return yScale(d["belgium"]); })
+    
+            .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["belgium"]); })
             .attr("width", "40px" )
             .on('mouseover', tip.show)
             .on('mouseout', tip.hide)
@@ -237,7 +240,7 @@
             .append("text")
             .attr("class", "textlabel")
             .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
-            .attr("y", function(d){ return yScale(d["aantal"]) - 3; })
+            .attr("y", function(d){ return yScale(d["belgium"]) - 3; })
 
         //graph title
         svg.append("g")
@@ -297,7 +300,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    
+    </div>  
 </body>
 </html>
 
