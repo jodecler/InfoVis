@@ -33,9 +33,7 @@
     </nav>
 
     <div class="container">
-
-<div class="col-md-12">
-        <p id="title">See the difference in refugees between Belgium and</p>
+     <p id="title">See the difference in refugees between Belgium and</p>
         <table class="table">
 
             <tr>
@@ -52,12 +50,10 @@
             </tr>
         
         </table>
-    </div>
-        
-     <div class="col-md-12">
+
         <div class="page-header"><p id="title">Graph number of refugees from 1951 till 2014</p></div>
         <div id="graphdiv"/div>
-    </div>
+
     
       </div><!-- /.container -->
 
@@ -78,7 +74,7 @@
  function makeGraph(country){
 var margin = {top:30, right:30, bottom:150, left:150},
             width  = 1200,
-            height = 500;
+            height = 720;
 
 var x0 = d3.scale.ordinal()
     .rangeRoundBands([0, width - margin.right - margin.left], .1);
