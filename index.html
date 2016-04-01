@@ -3,7 +3,7 @@
    
 <head>
     <meta charset="utf-8">
-    <title>Histogram</title>
+    <title>Refugees</title>
     <!-- d3 javascript -->
     <script src="d3.js" charset="utf-8"></script>
     <!-- for the tooltip -->
@@ -23,6 +23,9 @@
       <ul class="nav navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="comparison.html">Comparison between countries</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -123,20 +126,34 @@
 
 
         
+    
+    
+        
+        
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    </div>  
+</body>
+    
     <script>
         //Set margins
         var margin = {top:30, right:30, bottom:150, left:150},
             width  = 3200,
             height = 500,
             padding = 100;
-
-        
-        
+  
         //add object to body where graph will be
         var svg = d3.select("#graphdiv")
             .append("svg")
             .attr("viewBox", "0 0 " + width + " " + height);
         
+   
         //set scales x and y axis
         var yScale = d3.scale.linear()
             .range([height - margin.top - margin.bottom, 0]);
@@ -155,16 +172,17 @@
 
         //data out of file
         d3.csv("valuesVisualisationCSV.csv", function(error, data){
-            data = data.map(function(d){ 
-                d["belgium"] = +d["belgium"]; 
-                return d;
-            });   
             
+            data = data.map(function(d){ 
+             d["belgium"] = +d["belgium"]; 
+            return d;
+           });     
+          
         //yscale's domain is from zero to the maximum refugees
-        yScale.domain([0, d3.max(data, function(d){ return d["belgium"]; })]);
+     yScale.domain([0, d3.max(data, function(d){ return d["belgium"]; })]);
 
         //xscale is years
-        xScale.domain(data.map(function(d){ return d["jaar"]; }));
+       xScale.domain(data.map(function(d){ return d["jaar"]; }));
         var tip = d3.tip()
             .attr('class', 'd3-tip')
             .offset([-10, 0])
@@ -185,7 +203,6 @@
             .attr("class", "bar")
             .attr("x", function(d){ return xScale(d["jaar"]); })
             .attr("y", function(d){ return yScale(d["belgium"]); })
-    
             .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["belgium"]); })
             .attr("width", "40px" )
             .on('mouseover', tip.show)
@@ -289,19 +306,6 @@
                 
         });  
     </script>
-    
-        
-        
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    </div>  
-</body>
 </html>
 
 
