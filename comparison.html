@@ -78,8 +78,7 @@
  function makeGraph(country){
 var margin = {top:30, right:30, bottom:150, left:150},
             width  = 1200,
-            height = 500,
-            padding = 100;
+            height = 500;
 
 var x0 = d3.scale.ordinal()
     .rangeRoundBands([0, width - margin.right - margin.left], .1);
@@ -87,7 +86,7 @@ var x0 = d3.scale.ordinal()
 var x1 = d3.scale.ordinal();
 
 var y = d3.scale.linear()
-    .range([height - margin.top - margin.bottom, 0]);
+    .range([height , 0]);
 
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6"]);
@@ -99,7 +98,7 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
-.ticks(10);
+.ticks(20);
 
 var svg = d3.select("#graphdiv").append("svg")
       .attr("width", width + margin.left + margin.right)
@@ -118,7 +117,7 @@ d3.csv("valuesVisualisationCSV.csv", function(error, data) {
 
   x0.domain(data.map(function(d) { return d.jaar; }));
   x1.domain(countryNames).rangeRoundBands([0, x0.rangeBand()]);
-  y.domain([0, d3.max(data, function(d) { return d3.max(d.refugees, function(d) { return d.value; }); })]);
+  y.domain([0, 400000]);
     
   svg.append("g")
       .attr("class", "x axis")
