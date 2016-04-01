@@ -35,7 +35,26 @@
 
     <div class="container">
 
+<div class="col-md-12">
+        <p id="title">See the difference in refugees between Belgium and</p>
+        <table class="table">
 
+            <tr>
+                <td>Country to compare Belgium with: </td><td><select id="countries">
+  <option value="france">France</option>
+  <option value="germany">Germany</option>
+  <option value="netherlands">The Netherlands</option>
+  <option value="spain">Spain</option>
+                <option value="luxemburg">Luxemburg</option>
+</select></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="betweenCountries" class="btn btn-primary" >See difference in countries </button></td>
+            </tr>
+        
+        </table>
+    </div>
+        
      <div>
         <div class="page-header"><p id="title">Graph number of refugees from 1951 till 2014</p></div>
         <div id="graphdiv"/div>
@@ -60,8 +79,9 @@
              d.refugeesFrance = belgium.map(function(name) {return {name: name, value: +d[name]};}) 
          });
      });
-       
-  var margin = {top: 20, right: 80, bottom: 30, left: 50},
+        
+        
+          var margin = {top: 20, right: 80, bottom: 30, left: 50},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -91,11 +111,16 @@ var svg = d3.select("body").append("svg")
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-d3.csv("valuesVisualisationCSV.csv", function(error, data) {
+        
+        var button = d3.select("#betweenCountries")
+                .on("click", function(){
+                    var country = d3.select("#countries").node().value;
+                    console.log(country);
+                    
+                    d3.csv("valuesVisualisationCSV.csv", function(error, data) {
   if (error) throw error;
 
-  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "jaar"; }));
+  color.domain(d3.keys(data[0]).filter(function(key) { return key !== "jaar" && (key == "belgium" || key == "france"); }));
 
   data.forEach(function(d) {
     d.jaar = d.jaar;
@@ -149,6 +174,13 @@ d3.csv("valuesVisualisationCSV.csv", function(error, data) {
       .attr("dy", ".35em")
       .text(function(d) { return d.name; });
 });
+                    
+                            })
+                
+       
+
+
+
     </script>
     
     <!-- Bootstrap core JavaScript
