@@ -8,7 +8,6 @@
     <script src="d3.js" charset="utf-8"></script>
     <!-- for the tooltip -->
     <script src="d3tooltip.js" charset="utf-8" ></script>
-
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" >
 
@@ -41,11 +40,11 @@
 
             <tr>
                 <td>Country to compare Belgium with: </td><td><select id="countries">
-  <option value="france">France</option>
-  <option value="germany">Germany</option>
-  <option value="netherlands">The Netherlands</option>
-  <option value="spain">Spain</option>
-                <option value="luxemburg">Luxemburg</option>
+  <option value="France">France</option>
+  <option value="Germany">Germany</option>
+  <option value="Netherlands">The Netherlands</option>
+  <option value="Spain">Spain</option>
+                <option value="Luxemburg">Luxemburg</option>
 </select></td>
             </tr>
             <tr>
@@ -55,7 +54,7 @@
         </table>
     </div>
         
-     <div>
+     <div class="col-md-12">
         <div class="page-header"><p id="title">Graph number of refugees from 1951 till 2014</p></div>
         <div id="graphdiv"/div>
     </div>
@@ -77,19 +76,18 @@
         
                 
  function makeGraph(country){
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom,
-    
-            padding = 100;;
+var margin = {top:30, right:30, bottom:150, left:150},
+            width  = 1200,
+            height = 500,
+            padding = 100;
 
 var x0 = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+    .rangeRoundBands([0, width - margin.right - margin.left], .1);
 
 var x1 = d3.scale.ordinal();
 
 var y = d3.scale.linear()
-    .range([height, 0]);
+    .range([height - margin.top - margin.bottom, 0]);
 
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6"]);
@@ -101,10 +99,10 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left")
-    .ticks(10);
+.ticks(10);
 
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
+var svg = d3.select("#graphdiv").append("svg")
+      .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -112,7 +110,7 @@ var svg = d3.select("body").append("svg")
 d3.csv("valuesVisualisationCSV.csv", function(error, data) {
   if (error) throw error;
 
-  var countryNames = d3.keys(data[0]).filter(function(key) { return key !== "jaar" && (key == "belgium" || key == "france"); });
+  var countryNames = d3.keys(data[0]).filter(function(key) { return key !== "jaar" && (key == "Belgium" || key == country); });
 
   data.forEach(function(d) {
     d.refugees = countryNames.map(function(name) { return {name: name, value: +d[name]}; });
@@ -121,25 +119,27 @@ d3.csv("valuesVisualisationCSV.csv", function(error, data) {
   x0.domain(data.map(function(d) { return d.jaar; }));
   x1.domain(countryNames).rangeRoundBands([0, x0.rangeBand()]);
   y.domain([0, d3.max(data, function(d) { return d3.max(d.refugees, function(d) { return d.value; }); })]);
-console.log(data);
     
   svg.append("g")
       .attr("class", "x axis")
-        .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
+        .attr("transform", "translate(" + margin.left * 2+ "," + (height - margin.bottom) + ")")
             .call(xAxis)
             .selectAll("text")  
             .style("text-anchor", "middle")
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
+            .attr("x", "-150px")
+    .attr("y", "-300px")
             .attr("transform", "rotate(-90)" )
-            .style("text-anchor", "end");   ;
+            .style("text-anchor", "end")
+            .style("font-size", "10px") ;
 
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
-    .append("text")
+      .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
+      .attr("y", "-150px")
       .attr("dy", ".71em")
       .style("text-anchor", "end")
       .text("Number of refugees");
@@ -160,35 +160,16 @@ console.log(data);
       .attr("height", function(d) { return height - y(d.value); })
       .style("fill", function(d) { return color(d.name); });
 
-    
+    //x axis label
     svg.append("text")
             .attr("class", "labelGraph")
             .attr("text-anchor", "end")
             .attr("x", width / 2)
-            .attr("y", height)
-            .text("Year");
+            .attr("y", height + 50)
+            .text("Year")
+            .style("font-size","10px");
 
-        //add text labels to the top of each bar
-        svg.append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-            .selectAll(".textlabel")
-            .data(data)
-            .enter()
-            .append("text")
-            .attr("class", "textlabel")
-            .attr("x", function(d){ return x0(d["jaar"]) + (x0.rangeBand()/2); })
-            .attr("y", function(d){ return y(d["belgium"]) - 3; })
-
-        //graph title
-        svg.append("g")
-            .attr("transform", "translate(" + (width/2) + ", 45)")
-            .append("text")
-            .text("Number of refugees in Belgium during the years")
-            .style({"text-anchor":"middle", "font-family":"Verdana", "font-weight":"800", "font-size":"10px"});
-
-    
-    
-    
+        
     
   var legend = svg.selectAll(".legend")
       .data(countryNames.slice().reverse())
