@@ -98,3 +98,6 @@ th{
     margin-top: 50px;
 }
 
+svg:not(:root) {
+    overflow: visible;
+}
