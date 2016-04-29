@@ -26,14 +26,14 @@
                 <a class="nav-link" href="comparison.html">Comparison between countries <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.html">About</a>
             </li>
         </ul>
     </nav>
 
     <div class="container">
         
-        <div>
+        <div class="page-header">
             <p id="title">See the difference in refugees between Belgium and</p>
         <table class="table">
 
@@ -113,8 +113,6 @@
 
             var svg = d3.select("#graphdiv").append("svg")
                 .attr("viewBox", "0 0 " + width + " " + height)
-                //.attr("width", width   )
-                // .attr("height", height  )
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -142,21 +140,9 @@
                     return d3.max(d.refugees, function (d) {
                         return d.value;
                     });
-                })]);
+                }) 
+                ]);
 
-                /* svg.append("g")
-      .attr("class", "x axis")
-        .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
-            .call(xAxis)
-            .selectAll("text")  
-            .style("text-anchor", "middle")
-            .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-    .attr("y", "-300px")
-            .attr("transform", "rotate(-90)" )
-            .style("text-anchor", "end")
-            .style("font-size", "10px") ;
-*/
                 svg.append("g")
                     .attr("class", "x axis")
                     .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
@@ -165,30 +151,34 @@
                     .style("text-anchor", "middle")
                     .attr("dx", "-.8em")
                     .attr("dy", ".15em")
-
-                .attr("transform", "rotate(-90)")
-                    .style("text-anchor", "end")
+                    .attr("transform", "rotate(-90)")
                     .attr("y", "-150px")
-                    .attr("x", "-20px");
-
-
+                    .attr("x", "-150px");
+                
+                //title x axis
+                 svg.append("text")
+                    .attr("text-anchor", "end")
+                    .attr("class", "labelGraph")
+                    .attr("x", width / 2)                 
+                    .attr("y", "600px")
+                    .text("Year");
+                
                 svg.append("g")
                     .attr("class", "y axis")
                     .call(yAxis)
                     .append("text")
                     .attr("transform", "rotate(-90)")
-                    .attr("y", "-150px")
-                    .attr("dy", ".71em")
-                    .style("text-anchor", "end")
-                    .text("Number of refugees");
-
+                    .attr("dy", "-100px")
+                    .attr("transform", "translate("+ (padding / 40 - 20) +","+(height / 50 )+")rotate(-90)") 
+                    .text("Number of refugees")
+                    .attr("class", "labelGraph");
                 //making the bars
                 var jaar = svg.selectAll(".jaar")
                     .data(data)
                     .enter().append("g")
                     .attr("class", "jaar")
                     .attr("transform", function (d) {
-                        return "translate(" + x0(d.jaar) + ",0)";
+                        return "translate(" + x0(d.jaar) + ",-50)";
                     });
 
                 jaar.selectAll("rect")
@@ -220,7 +210,7 @@
                     });
 
                 legend.append("rect")
-                    .attr("x", width - 18)
+                    .attr("x", width)
                     .attr("width", 18)
                     .attr("height", 18)
                     .style("fill", color);
