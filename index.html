@@ -107,13 +107,6 @@
     </div>
 </body>
 
-<!-- <script>
-var app = angular.module('myApp', []);
-app.controller('refugeesController', function($scope, $http) {
-    $scope.refugees = {};//[{Year: "1951", Country: "Belgium", Origin: "Various/Unknown", Refugees: "55000"},{Year: "1951", Country: "Belgium", Origin: "Various/Unknown", Refugees: "55000"}];
-});
-</script> -->
-
     <script>
 
         var app = angular.module('myApp', []);
@@ -122,7 +115,6 @@ app.controller('refugeesController', function($scope, $http) {
             $scope.refugees = {};
 
             var refugeesPerCountry;
-            // d3.csv("refugees.csv").get(function(error, data) { console.log(data); refugeesPerCountry = data;});
             d3.csv("refugees.csv", function(data){
               data.forEach(function(d){ d['year'] = +d['year']; d['refugees'] = +d['refugees']; });
               refugeesPerCountry = data;
