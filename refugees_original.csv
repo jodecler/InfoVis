@@ -1,4 +1,7 @@
-year,country,origin,refugees
+"Extracted from the UNHCR Population Statistics Reference Database","United Nations High Commissioner for Refugees"
+"Date extracted: 2016-04-28 11:55:28 +02:00"
+
+Year,"Country / territory of asylum/residence",Origin,"Refugees (incl. refugee-like situations)"
 1951,Belgium,Various/Unknown,55000
 1952,Belgium,Various/Unknown,53500
 1953,Belgium,Various/Unknown,53000
@@ -33,6 +36,7 @@ year,country,origin,refugees
 1982,Belgium,Various/Unknown,21000
 1983,Belgium,Various/Unknown,35000
 1984,Belgium,Various/Unknown,36400
+1985,Belgium,"Lao People's Dem. Rep.",
 1985,Belgium,Various/Unknown,36600
 1986,Belgium,Various/Unknown,35900
 1987,Belgium,Various/Unknown,22000
@@ -44,12 +48,12 @@ year,country,origin,refugees
 1993,Belgium,Various/Unknown,24908
 1994,Belgium,Chile,
 1994,Belgium,Colombia,
-1994,Belgium,Iran,
-1994,Belgium,Syrian Arab Rep.,
+1994,Belgium,"Iran (Islamic Rep. of)",
+1994,Belgium,"Syrian Arab Rep.",
 1994,Belgium,Various/Unknown,19497
 1995,Belgium,Chile,
 1995,Belgium,Haiti,
-1995,Belgium,Iran,
+1995,Belgium,"Iran (Islamic Rep. of)",
 1995,Belgium,Rwanda,
 1995,Belgium,Various/Unknown,31691
 1996,Belgium,Afghanistan,224
@@ -58,17 +62,17 @@ year,country,origin,refugees
 1996,Belgium,Armenia,115
 1996,Belgium,Burundi,472
 1996,Belgium,Bulgaria,153
-1996,Belgium,Bosnia and Herzegovina,
+1996,Belgium,"Bosnia and Herzegovina",
 1996,Belgium,Chile,964
-1996,Belgium,Dem. Rep. of the Congo,2236
+1996,Belgium,"Dem. Rep. of the Congo",2236
 1996,Belgium,Spain,159
 1996,Belgium,Ethiopia,102
 1996,Belgium,Ghana,112
 1996,Belgium,Hungary,1264
-1996,Belgium,Iran,1645
+1996,Belgium,"Iran (Islamic Rep. of)",1645
 1996,Belgium,Iraq,250
 1996,Belgium,Cambodia,592
-1996,Belgium,Laos,534
+1996,Belgium,"Lao People's Dem. Rep.",534
 1996,Belgium,Lebanon,177
 1996,Belgium,Lithuania,202
 1996,Belgium,Latvia,98
@@ -76,14 +80,14 @@ year,country,origin,refugees
 1996,Belgium,Poland,4466
 1996,Belgium,Portugal,192
 1996,Belgium,Romania,672
-1996,Belgium,Russian Federation,1013
+1996,Belgium,"Russian Federation",1013
 1996,Belgium,Rwanda,1041
 1996,Belgium,Somalia,151
-1996,Belgium,Serbia and Kosovo,1815
-1996,Belgium,Syrian Arab Rep.,238
+1996,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1815
+1996,Belgium,"Syrian Arab Rep.",238
 1996,Belgium,Turkey,4907
 1996,Belgium,Ukraine,898
-1996,Belgium,Viet Nam,3090
+1996,Belgium,"Viet Nam",3090
 1996,Belgium,Various/Unknown,7022
 1997,Belgium,Afghanistan,224
 1997,Belgium,Angola,449
@@ -92,15 +96,15 @@ year,country,origin,refugees
 1997,Belgium,Burundi,472
 1997,Belgium,Bulgaria,153
 1997,Belgium,Chile,964
-1997,Belgium,Dem. Rep. of the Congo,2236
+1997,Belgium,"Dem. Rep. of the Congo",2236
 1997,Belgium,Spain,159
 1997,Belgium,Ethiopia,102
 1997,Belgium,Ghana,112
 1997,Belgium,Hungary,1264
-1997,Belgium,Iran,1645
+1997,Belgium,"Iran (Islamic Rep. of)",1645
 1997,Belgium,Iraq,250
 1997,Belgium,Cambodia,592
-1997,Belgium,Laos,534
+1997,Belgium,"Lao People's Dem. Rep.",534
 1997,Belgium,Lebanon,177
 1997,Belgium,Lithuania,202
 1997,Belgium,Latvia,98
@@ -108,14 +112,14 @@ year,country,origin,refugees
 1997,Belgium,Poland,4466
 1997,Belgium,Portugal,192
 1997,Belgium,Romania,672
-1997,Belgium,Russian Federation,1013
+1997,Belgium,"Russian Federation",1013
 1997,Belgium,Rwanda,1041
 1997,Belgium,Somalia,151
-1997,Belgium,Serbia and Kosovo,1815
-1997,Belgium,Syrian Arab Rep.,238
+1997,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1815
+1997,Belgium,"Syrian Arab Rep.",238
 1997,Belgium,Turkey,4907
 1997,Belgium,Ukraine,898
-1997,Belgium,Viet Nam,3090
+1997,Belgium,"Viet Nam",3090
 1997,Belgium,Various/Unknown,7022
 1998,Belgium,Afghanistan,182
 1998,Belgium,Angola,295
@@ -124,24 +128,24 @@ year,country,origin,refugees
 1998,Belgium,Azerbaijan,8
 1998,Belgium,Burundi,719
 1998,Belgium,Benin,1
-1998,Belgium,Burkina Faso,7
+1998,Belgium,"Burkina Faso",7
 1998,Belgium,Bangladesh,6
 1998,Belgium,Bulgaria,24
-1998,Belgium,Bosnia and Herzegovina,444
+1998,Belgium,"Bosnia and Herzegovina",444
 1998,Belgium,Belarus,5
-1998,Belgium,Bolivia,10
+1998,Belgium,"Bolivia (Plurinational State of)",10
 1998,Belgium,Brazil,2
 1998,Belgium,Bhutan,4
-1998,Belgium,Central African Rep.,2
+1998,Belgium,"Central African Rep.",2
 1998,Belgium,Chile,162
 1998,Belgium,China,85
-1998,Belgium,Ivory Coast,28
+1998,Belgium,"Côte d'Ivoire",28
 1998,Belgium,Cameroon,48
-1998,Belgium,Dem. Rep. of the Congo,1757
+1998,Belgium,"Dem. Rep. of the Congo",1757
 1998,Belgium,Congo,21
 1998,Belgium,Colombia,71
 1998,Belgium,Cuba,31
-1998,Belgium,Czech Rep.,6
+1998,Belgium,"Czech Rep.",6
 1998,Belgium,Djibouti,3
 1998,Belgium,Algeria,143
 1998,Belgium,Ecuador,5
@@ -157,22 +161,22 @@ year,country,origin,refugees
 1998,Belgium,Haiti,21
 1998,Belgium,Hungary,3
 1998,Belgium,India,49
-1998,Belgium,Iran,420
+1998,Belgium,"Iran (Islamic Rep. of)",420
 1998,Belgium,Iraq,192
 1998,Belgium,Israel,10
 1998,Belgium,Jordan,18
 1998,Belgium,Kenya,5
 1998,Belgium,Cambodia,33
-1998,Belgium,Laos,20
+1998,Belgium,"Lao People's Dem. Rep.",20
 1998,Belgium,Lebanon,124
 1998,Belgium,Liberia,39
 1998,Belgium,Libya,1
-1998,Belgium,Sri Lanka,22
+1998,Belgium,"Sri Lanka",22
 1998,Belgium,Lithuania,1
 1998,Belgium,Morocco,21
-1998,Belgium,Rep. of Moldova,4
+1998,Belgium,"Rep. of Moldova",4
 1998,Belgium,Mexico,1
-1998,Belgium,Macedonia,61
+1998,Belgium,"The former Yugoslav Republic of Macedonia",61
 1998,Belgium,Mali,3
 1998,Belgium,Myanmar,5
 1998,Belgium,Mozambique,1
@@ -187,27 +191,27 @@ year,country,origin,refugees
 1998,Belgium,Poland,21
 1998,Belgium,Palestinian,5
 1998,Belgium,Romania,371
-1998,Belgium,Russian Federation,41
+1998,Belgium,"Russian Federation",41
 1998,Belgium,Rwanda,1603
 1998,Belgium,Sudan,21
 1998,Belgium,Senegal,8
-1998,Belgium,Sierra Leone,8
-1998,Belgium,El Salvador,4
+1998,Belgium,"Sierra Leone",8
+1998,Belgium,"El Salvador",4
 1998,Belgium,Somalia,210
-1998,Belgium,Serbia and Kosovo,811
+1998,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",811
 1998,Belgium,Slovakia,3
 1998,Belgium,Slovenia,1
-1998,Belgium,Syrian Arab Rep.,105
+1998,Belgium,"Syrian Arab Rep.",105
 1998,Belgium,Chad,15
 1998,Belgium,Togo,101
 1998,Belgium,Tunisia,11
 1998,Belgium,Turkey,1744
 1998,Belgium,Uganda,11
 1998,Belgium,Ukraine,23
-1998,Belgium,Viet Nam,412
+1998,Belgium,"Viet Nam",412
 1998,Belgium,Stateless,10
 1998,Belgium,Various/Unknown,4131
-1998,Belgium,South Africa,2
+1998,Belgium,"South Africa",2
 1999,Belgium,Afghanistan,232
 1999,Belgium,Angola,325
 1999,Belgium,Albania,114
@@ -215,24 +219,24 @@ year,country,origin,refugees
 1999,Belgium,Azerbaijan,9
 1999,Belgium,Burundi,842
 1999,Belgium,Benin,1
-1999,Belgium,Burkina Faso,7
+1999,Belgium,"Burkina Faso",7
 1999,Belgium,Bangladesh,7
 1999,Belgium,Bulgaria,21
-1999,Belgium,Bosnia and Herzegovina,458
+1999,Belgium,"Bosnia and Herzegovina",458
 1999,Belgium,Belarus,8
-1999,Belgium,Bolivia,9
+1999,Belgium,"Bolivia (Plurinational State of)",9
 1999,Belgium,Brazil,2
 1999,Belgium,Bhutan,4
-1999,Belgium,Central African Rep.,2
+1999,Belgium,"Central African Rep.",2
 1999,Belgium,Chile,122
 1999,Belgium,China,84
-1999,Belgium,Ivory Coast,28
+1999,Belgium,"Côte d'Ivoire",28
 1999,Belgium,Cameroon,49
-1999,Belgium,Dem. Rep. of the Congo,1932
+1999,Belgium,"Dem. Rep. of the Congo",1932
 1999,Belgium,Congo,28
 1999,Belgium,Colombia,77
 1999,Belgium,Cuba,38
-1999,Belgium,Czech Rep.,4
+1999,Belgium,"Czech Rep.",4
 1999,Belgium,Djibouti,6
 1999,Belgium,Algeria,183
 1999,Belgium,Ecuador,5
@@ -249,21 +253,21 @@ year,country,origin,refugees
 1999,Belgium,Haiti,20
 1999,Belgium,Hungary,3
 1999,Belgium,India,52
-1999,Belgium,Iran,352
+1999,Belgium,"Iran (Islamic Rep. of)",352
 1999,Belgium,Iraq,243
 1999,Belgium,Israel,16
 1999,Belgium,Jordan,17
 1999,Belgium,Kenya,5
 1999,Belgium,Cambodia,28
-1999,Belgium,Laos,17
+1999,Belgium,"Lao People's Dem. Rep.",17
 1999,Belgium,Lebanon,118
 1999,Belgium,Liberia,52
-1999,Belgium,Sri Lanka,30
+1999,Belgium,"Sri Lanka",30
 1999,Belgium,Lithuania,1
 1999,Belgium,Morocco,21
-1999,Belgium,Rep. of Moldova,4
+1999,Belgium,"Rep. of Moldova",4
 1999,Belgium,Mexico,1
-1999,Belgium,Macedonia,64
+1999,Belgium,"The former Yugoslav Republic of Macedonia",64
 1999,Belgium,Mali,3
 1999,Belgium,Myanmar,5
 1999,Belgium,Mozambique,1
@@ -278,50 +282,50 @@ year,country,origin,refugees
 1999,Belgium,Poland,15
 1999,Belgium,Palestinian,5
 1999,Belgium,Romania,338
-1999,Belgium,Russian Federation,39
+1999,Belgium,"Russian Federation",39
 1999,Belgium,Rwanda,2108
 1999,Belgium,Sudan,22
 1999,Belgium,Senegal,8
-1999,Belgium,Sierra Leone,11
+1999,Belgium,"Sierra Leone",11
 1999,Belgium,Somalia,238
-1999,Belgium,Serbia and Kosovo,849
+1999,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",849
 1999,Belgium,Slovakia,3
 1999,Belgium,Slovenia,1
-1999,Belgium,Syrian Arab Rep.,103
+1999,Belgium,"Syrian Arab Rep.",103
 1999,Belgium,Chad,13
 1999,Belgium,Togo,107
 1999,Belgium,Tunisia,10
 1999,Belgium,Turkey,1758
 1999,Belgium,Uganda,11
 1999,Belgium,Ukraine,23
-1999,Belgium,Viet Nam,312
+1999,Belgium,"Viet Nam",312
 1999,Belgium,Stateless,2
 1999,Belgium,Various/Unknown,4407
-1999,Belgium,South Africa,2
+1999,Belgium,"South Africa",2
 2000,Belgium,Afghanistan,275
 2000,Belgium,Angola,338
 2000,Belgium,Albania,134
 2000,Belgium,Armenia,51
 2000,Belgium,Azerbaijan,9
 2000,Belgium,Burundi,976
-2000,Belgium,Burkina Faso,6
+2000,Belgium,"Burkina Faso",6
 2000,Belgium,Bangladesh,6
 2000,Belgium,Bulgaria,20
-2000,Belgium,Bosnia and Herzegovina,468
+2000,Belgium,"Bosnia and Herzegovina",468
 2000,Belgium,Belarus,8
-2000,Belgium,Bolivia,7
+2000,Belgium,"Bolivia (Plurinational State of)",7
 2000,Belgium,Brazil,2
 2000,Belgium,Bhutan,4
-2000,Belgium,Central African Rep.,2
+2000,Belgium,"Central African Rep.",2
 2000,Belgium,Chile,84
 2000,Belgium,China,52
-2000,Belgium,Ivory Coast,28
+2000,Belgium,"Côte d'Ivoire",28
 2000,Belgium,Cameroon,56
-2000,Belgium,Dem. Rep. of the Congo,2058
+2000,Belgium,"Dem. Rep. of the Congo",2058
 2000,Belgium,Congo,48
 2000,Belgium,Colombia,82
 2000,Belgium,Cuba,41
-2000,Belgium,Czech Rep.,4
+2000,Belgium,"Czech Rep.",4
 2000,Belgium,Djibouti,10
 2000,Belgium,Algeria,216
 2000,Belgium,Ecuador,4
@@ -336,21 +340,21 @@ year,country,origin,refugees
 2000,Belgium,Croatia,71
 2000,Belgium,Haiti,16
 2000,Belgium,India,51
-2000,Belgium,Iran,313
+2000,Belgium,"Iran (Islamic Rep. of)",313
 2000,Belgium,Iraq,314
 2000,Belgium,Israel,18
 2000,Belgium,Jordan,16
 2000,Belgium,Kenya,6
 2000,Belgium,Cambodia,27
-2000,Belgium,Laos,16
+2000,Belgium,"Lao People's Dem. Rep.",16
 2000,Belgium,Lebanon,88
 2000,Belgium,Liberia,51
-2000,Belgium,Sri Lanka,32
+2000,Belgium,"Sri Lanka",32
 2000,Belgium,Lithuania,1
 2000,Belgium,Morocco,21
-2000,Belgium,Rep. of Moldova,6
+2000,Belgium,"Rep. of Moldova",6
 2000,Belgium,Mexico,1
-2000,Belgium,Macedonia,64
+2000,Belgium,"The former Yugoslav Republic of Macedonia",64
 2000,Belgium,Mali,3
 2000,Belgium,Myanmar,5
 2000,Belgium,Mauritania,78
@@ -363,52 +367,52 @@ year,country,origin,refugees
 2000,Belgium,Peru,70
 2000,Belgium,Poland,6
 2000,Belgium,Romania,314
-2000,Belgium,Russian Federation,35
+2000,Belgium,"Russian Federation",35
 2000,Belgium,Rwanda,2544
 2000,Belgium,Sudan,19
 2000,Belgium,Senegal,9
-2000,Belgium,Sierra Leone,22
-2000,Belgium,El Salvador,2
+2000,Belgium,"Sierra Leone",22
+2000,Belgium,"El Salvador",2
 2000,Belgium,Somalia,263
-2000,Belgium,Serbia and Kosovo,891
+2000,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",891
 2000,Belgium,Slovenia,1
-2000,Belgium,Syrian Arab Rep.,102
+2000,Belgium,"Syrian Arab Rep.",102
 2000,Belgium,Chad,10
 2000,Belgium,Togo,107
 2000,Belgium,Tunisia,10
 2000,Belgium,Turkey,1732
 2000,Belgium,Uganda,10
 2000,Belgium,Ukraine,23
-2000,Belgium,Viet Nam,212
+2000,Belgium,"Viet Nam",212
 2000,Belgium,Stateless,2
 2000,Belgium,Various/Unknown,5779
-2000,Belgium,South Africa,1
+2000,Belgium,"South Africa",1
 2001,Belgium,Afghanistan,357
 2001,Belgium,Angola,309
 2001,Belgium,Albania,175
 2001,Belgium,Armenia,33
 2001,Belgium,Azerbaijan,2
 2001,Belgium,Burundi,621
-2001,Belgium,Burkina Faso,2
+2001,Belgium,"Burkina Faso",2
 2001,Belgium,Bangladesh,2
 2001,Belgium,Bulgaria,22
-2001,Belgium,Bosnia and Herzegovina,173
+2001,Belgium,"Bosnia and Herzegovina",173
 2001,Belgium,Belarus,9
-2001,Belgium,Bolivia,17
+2001,Belgium,"Bolivia (Plurinational State of)",17
 2001,Belgium,Brazil,1
 2001,Belgium,Bhutan,2
 2001,Belgium,Chile,196
 2001,Belgium,China,6
-2001,Belgium,Ivory Coast,4
+2001,Belgium,"Côte d'Ivoire",4
 2001,Belgium,Cameroon,28
-2001,Belgium,Dem. Rep. of the Congo,1432
+2001,Belgium,"Dem. Rep. of the Congo",1432
 2001,Belgium,Congo,66
 2001,Belgium,Colombia,62
-2001,Belgium,Cabo Verde,3
+2001,Belgium,"Cabo Verde",3
 2001,Belgium,Cuba,10
-2001,Belgium,Czech Rep.,42
+2001,Belgium,"Czech Rep.",42
 2001,Belgium,Germany,7
-2001,Belgium,Dominican Rep.,1
+2001,Belgium,"Dominican Rep.",1
 2001,Belgium,Algeria,166
 2001,Belgium,Ecuador,4
 2001,Belgium,Egypt,3
@@ -425,7 +429,7 @@ year,country,origin,refugees
 2001,Belgium,Haiti,9
 2001,Belgium,Hungary,259
 2001,Belgium,India,19
-2001,Belgium,Iran,243
+2001,Belgium,"Iran (Islamic Rep. of)",243
 2001,Belgium,Iraq,228
 2001,Belgium,Israel,12
 2001,Belgium,Jordan,6
@@ -433,16 +437,16 @@ year,country,origin,refugees
 2001,Belgium,Kenya,6
 2001,Belgium,Cambodia,78
 2001,Belgium,Kuwait,10
-2001,Belgium,Laos,62
+2001,Belgium,"Lao People's Dem. Rep.",62
 2001,Belgium,Lebanon,26
 2001,Belgium,Liberia,35
-2001,Belgium,Sri Lanka,12
+2001,Belgium,"Sri Lanka",12
 2001,Belgium,Lithuania,31
 2001,Belgium,Latvia,17
 2001,Belgium,Morocco,15
-2001,Belgium,Rep. of Moldova,1
+2001,Belgium,"Rep. of Moldova",1
 2001,Belgium,Madagascar,1
-2001,Belgium,Macedonia,1
+2001,Belgium,"The former Yugoslav Republic of Macedonia",1
 2001,Belgium,Myanmar,4
 2001,Belgium,Mozambique,2
 2001,Belgium,Mauritania,33
@@ -455,15 +459,15 @@ year,country,origin,refugees
 2001,Belgium,Portugal,2
 2001,Belgium,Palestinian,27
 2001,Belgium,Romania,63
-2001,Belgium,Russian Federation,107
+2001,Belgium,"Russian Federation",107
 2001,Belgium,Rwanda,2094
 2001,Belgium,Sudan,14
 2001,Belgium,Senegal,4
-2001,Belgium,Sierra Leone,18
+2001,Belgium,"Sierra Leone",18
 2001,Belgium,Somalia,187
-2001,Belgium,Serbia and Kosovo,977
+2001,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",977
 2001,Belgium,Slovenia,7
-2001,Belgium,Syrian Arab Rep.,47
+2001,Belgium,"Syrian Arab Rep.",47
 2001,Belgium,Chad,21
 2001,Belgium,Togo,40
 2001,Belgium,Thailand,1
@@ -472,37 +476,37 @@ year,country,origin,refugees
 2001,Belgium,Uganda,6
 2001,Belgium,Ukraine,188
 2001,Belgium,Uzbekistan,1
-2001,Belgium,Viet Nam,256
+2001,Belgium,"Viet Nam",256
 2001,Belgium,Various/Unknown,1139
-2001,Belgium,South Africa,3
+2001,Belgium,"South Africa",3
 2002,Belgium,Afghanistan,248
 2002,Belgium,Angola,213
 2002,Belgium,Albania,186
 2002,Belgium,Armenia,17
 2002,Belgium,Azerbaijan,3
 2002,Belgium,Burundi,437
-2002,Belgium,Burkina Faso,4
+2002,Belgium,"Burkina Faso",4
 2002,Belgium,Bangladesh,1
 2002,Belgium,Bulgaria,19
-2002,Belgium,Bosnia and Herzegovina,151
+2002,Belgium,"Bosnia and Herzegovina",151
 2002,Belgium,Belarus,13
-2002,Belgium,Bolivia,13
+2002,Belgium,"Bolivia (Plurinational State of)",13
 2002,Belgium,Brazil,1
 2002,Belgium,Bhutan,2
-2002,Belgium,Central African Rep.,1
+2002,Belgium,"Central African Rep.",1
 2002,Belgium,Chile,149
 2002,Belgium,China,5
-2002,Belgium,Ivory Coast,5
+2002,Belgium,"Côte d'Ivoire",5
 2002,Belgium,Cameroon,25
-2002,Belgium,Dem. Rep. of the Congo,1105
+2002,Belgium,"Dem. Rep. of the Congo",1105
 2002,Belgium,Congo,54
 2002,Belgium,Colombia,40
-2002,Belgium,Cabo Verde,1
+2002,Belgium,"Cabo Verde",1
 2002,Belgium,Cuba,2
-2002,Belgium,Czech Rep.,35
+2002,Belgium,"Czech Rep.",35
 2002,Belgium,Germany,7
 2002,Belgium,Djibouti,8
-2002,Belgium,Dominican Rep.,1
+2002,Belgium,"Dominican Rep.",1
 2002,Belgium,Algeria,117
 2002,Belgium,Ecuador,4
 2002,Belgium,Egypt,3
@@ -520,7 +524,7 @@ year,country,origin,refugees
 2002,Belgium,Haiti,6
 2002,Belgium,Hungary,221
 2002,Belgium,India,14
-2002,Belgium,Iran,179
+2002,Belgium,"Iran (Islamic Rep. of)",179
 2002,Belgium,Iraq,229
 2002,Belgium,Israel,8
 2002,Belgium,Jordan,6
@@ -528,15 +532,15 @@ year,country,origin,refugees
 2002,Belgium,Kenya,2
 2002,Belgium,Cambodia,47
 2002,Belgium,Kuwait,1
-2002,Belgium,Laos,48
+2002,Belgium,"Lao People's Dem. Rep.",48
 2002,Belgium,Lebanon,40
 2002,Belgium,Liberia,22
-2002,Belgium,Sri Lanka,7
+2002,Belgium,"Sri Lanka",7
 2002,Belgium,Lithuania,29
 2002,Belgium,Latvia,15
 2002,Belgium,Morocco,10
-2002,Belgium,Rep. of Moldova,2
-2002,Belgium,Macedonia,6
+2002,Belgium,"Rep. of Moldova",2
+2002,Belgium,"The former Yugoslav Republic of Macedonia",6
 2002,Belgium,Myanmar,3
 2002,Belgium,Mozambique,1
 2002,Belgium,Mauritania,21
@@ -549,15 +553,15 @@ year,country,origin,refugees
 2002,Belgium,Portugal,2
 2002,Belgium,Palestinian,18
 2002,Belgium,Romania,57
-2002,Belgium,Russian Federation,112
+2002,Belgium,"Russian Federation",112
 2002,Belgium,Rwanda,1661
 2002,Belgium,Sudan,16
 2002,Belgium,Senegal,3
-2002,Belgium,Sierra Leone,13
+2002,Belgium,"Sierra Leone",13
 2002,Belgium,Somalia,160
-2002,Belgium,Serbia and Kosovo,1293
+2002,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1293
 2002,Belgium,Slovenia,1
-2002,Belgium,Syrian Arab Rep.,31
+2002,Belgium,"Syrian Arab Rep.",31
 2002,Belgium,Chad,22
 2002,Belgium,Togo,25
 2002,Belgium,Thailand,1
@@ -568,10 +572,10 @@ year,country,origin,refugees
 2002,Belgium,Ukraine,173
 2002,Belgium,Uruguay,5
 2002,Belgium,Uzbekistan,9
-2002,Belgium,Viet Nam,170
+2002,Belgium,"Viet Nam",170
 2002,Belgium,Stateless,322
 2002,Belgium,Various/Unknown,3069
-2002,Belgium,South Africa,2
+2002,Belgium,"South Africa",2
 2003,Belgium,Afghanistan,541
 2003,Belgium,Angola,166
 2003,Belgium,Albania,195
@@ -579,27 +583,27 @@ year,country,origin,refugees
 2003,Belgium,Azerbaijan,3
 2003,Belgium,Burundi,344
 2003,Belgium,Benin,1
-2003,Belgium,Burkina Faso,4
+2003,Belgium,"Burkina Faso",4
 2003,Belgium,Bangladesh,
 2003,Belgium,Bulgaria,19
-2003,Belgium,Bosnia and Herzegovina,143
+2003,Belgium,"Bosnia and Herzegovina",143
 2003,Belgium,Belarus,62
-2003,Belgium,Bolivia,13
+2003,Belgium,"Bolivia (Plurinational State of)",13
 2003,Belgium,Brazil,1
 2003,Belgium,Bhutan,2
-2003,Belgium,Central African Rep.,12
+2003,Belgium,"Central African Rep.",12
 2003,Belgium,Chile,124
 2003,Belgium,China,10
-2003,Belgium,Ivory Coast,14
+2003,Belgium,"Côte d'Ivoire",14
 2003,Belgium,Cameroon,22
-2003,Belgium,Dem. Rep. of the Congo,1000
+2003,Belgium,"Dem. Rep. of the Congo",1000
 2003,Belgium,Congo,44
 2003,Belgium,Colombia,19
 2003,Belgium,Cuba,1
-2003,Belgium,Czech Rep.,33
+2003,Belgium,"Czech Rep.",33
 2003,Belgium,Germany,6
 2003,Belgium,Djibouti,24
-2003,Belgium,Dominican Rep.,1
+2003,Belgium,"Dominican Rep.",1
 2003,Belgium,Algeria,144
 2003,Belgium,Ecuador,
 2003,Belgium,Egypt,3
@@ -617,7 +621,7 @@ year,country,origin,refugees
 2003,Belgium,Haiti,6
 2003,Belgium,Hungary,196
 2003,Belgium,India,10
-2003,Belgium,Iran,171
+2003,Belgium,"Iran (Islamic Rep. of)",171
 2003,Belgium,Iraq,209
 2003,Belgium,Israel,5
 2003,Belgium,Jordan,5
@@ -625,16 +629,16 @@ year,country,origin,refugees
 2003,Belgium,Kenya,1
 2003,Belgium,Kyrgyzstan,1
 2003,Belgium,Cambodia,41
-2003,Belgium,Laos,37
+2003,Belgium,"Lao People's Dem. Rep.",37
 2003,Belgium,Lebanon,32
 2003,Belgium,Liberia,24
 2003,Belgium,Libya,
-2003,Belgium,Sri Lanka,6
+2003,Belgium,"Sri Lanka",6
 2003,Belgium,Lithuania,28
 2003,Belgium,Latvia,21
 2003,Belgium,Morocco,8
-2003,Belgium,Rep. of Moldova,3
-2003,Belgium,Macedonia,20
+2003,Belgium,"Rep. of Moldova",3
+2003,Belgium,"The former Yugoslav Republic of Macedonia",20
 2003,Belgium,Myanmar,2
 2003,Belgium,Mongolia,
 2003,Belgium,Mauritania,17
@@ -648,15 +652,15 @@ year,country,origin,refugees
 2003,Belgium,Portugal,1
 2003,Belgium,Palestinian,25
 2003,Belgium,Romania,48
-2003,Belgium,Russian Federation,168
+2003,Belgium,"Russian Federation",168
 2003,Belgium,Rwanda,1591
 2003,Belgium,Sudan,11
 2003,Belgium,Senegal,4
-2003,Belgium,Sierra Leone,10
+2003,Belgium,"Sierra Leone",10
 2003,Belgium,Somalia,163
-2003,Belgium,Serbia and Kosovo,1750
+2003,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1750
 2003,Belgium,Slovakia,
-2003,Belgium,Syrian Arab Rep.,19
+2003,Belgium,"Syrian Arab Rep.",19
 2003,Belgium,Chad,12
 2003,Belgium,Togo,20
 2003,Belgium,Thailand,1
@@ -669,10 +673,10 @@ year,country,origin,refugees
 2003,Belgium,Ukraine,152
 2003,Belgium,Uruguay,5
 2003,Belgium,Uzbekistan,21
-2003,Belgium,Viet Nam,144
+2003,Belgium,"Viet Nam",144
 2003,Belgium,Stateless,309
 2003,Belgium,Various/Unknown,2959
-2003,Belgium,South Africa,2
+2003,Belgium,"South Africa",2
 2004,Belgium,Afghanistan,536
 2004,Belgium,Angola,134
 2004,Belgium,Albania,203
@@ -681,27 +685,27 @@ year,country,origin,refugees
 2004,Belgium,Burundi,263
 2004,Belgium,Belgium,
 2004,Belgium,Benin,1
-2004,Belgium,Burkina Faso,3
+2004,Belgium,"Burkina Faso",3
 2004,Belgium,Bangladesh,5
 2004,Belgium,Bulgaria,31
-2004,Belgium,Bosnia and Herzegovina,149
+2004,Belgium,"Bosnia and Herzegovina",149
 2004,Belgium,Belarus,105
-2004,Belgium,Bolivia,12
+2004,Belgium,"Bolivia (Plurinational State of)",12
 2004,Belgium,Brazil,1
 2004,Belgium,Bhutan,
-2004,Belgium,Central African Rep.,1
+2004,Belgium,"Central African Rep.",1
 2004,Belgium,Chile,101
 2004,Belgium,China,33
-2004,Belgium,Ivory Coast,16
+2004,Belgium,"Côte d'Ivoire",16
 2004,Belgium,Cameroon,27
-2004,Belgium,Dem. Rep. of the Congo,878
+2004,Belgium,"Dem. Rep. of the Congo",878
 2004,Belgium,Congo,44
 2004,Belgium,Colombia,44
 2004,Belgium,Cuba,3
-2004,Belgium,Czech Rep.,26
+2004,Belgium,"Czech Rep.",26
 2004,Belgium,Germany,6
 2004,Belgium,Djibouti,58
-2004,Belgium,Dominican Rep.,1
+2004,Belgium,"Dominican Rep.",1
 2004,Belgium,Algeria,132
 2004,Belgium,Ecuador,4
 2004,Belgium,Egypt,1
@@ -721,7 +725,7 @@ year,country,origin,refugees
 2004,Belgium,Haiti,5
 2004,Belgium,Hungary,169
 2004,Belgium,India,8
-2004,Belgium,Iran,207
+2004,Belgium,"Iran (Islamic Rep. of)",207
 2004,Belgium,Iraq,167
 2004,Belgium,Israel,4
 2004,Belgium,Jordan,10
@@ -729,17 +733,17 @@ year,country,origin,refugees
 2004,Belgium,Kenya,2
 2004,Belgium,Kyrgyzstan,20
 2004,Belgium,Cambodia,33
-2004,Belgium,Laos,35
+2004,Belgium,"Lao People's Dem. Rep.",35
 2004,Belgium,Lebanon,34
 2004,Belgium,Liberia,16
 2004,Belgium,Libya,
-2004,Belgium,Sri Lanka,4
+2004,Belgium,"Sri Lanka",4
 2004,Belgium,Lithuania,25
 2004,Belgium,Latvia,21
 2004,Belgium,Morocco,8
-2004,Belgium,Rep. of Moldova,6
+2004,Belgium,"Rep. of Moldova",6
 2004,Belgium,Madagascar,1
-2004,Belgium,Macedonia,36
+2004,Belgium,"The former Yugoslav Republic of Macedonia",36
 2004,Belgium,Myanmar,4
 2004,Belgium,Mongolia,
 2004,Belgium,Mauritania,30
@@ -750,20 +754,20 @@ year,country,origin,refugees
 2004,Belgium,Pakistan,44
 2004,Belgium,Peru,4
 2004,Belgium,Poland,525
-2004,Belgium,North Korea,
+2004,Belgium,"Dem. People's Rep. of Korea",
 2004,Belgium,Portugal,1
 2004,Belgium,Palestinian,26
 2004,Belgium,Romania,47
-2004,Belgium,Russian Federation,1081
+2004,Belgium,"Russian Federation",1081
 2004,Belgium,Rwanda,1795
 2004,Belgium,Sudan,13
 2004,Belgium,Senegal,4
-2004,Belgium,Sierra Leone,9
-2004,Belgium,El Salvador,2
+2004,Belgium,"Sierra Leone",9
+2004,Belgium,"El Salvador",2
 2004,Belgium,Somalia,119
-2004,Belgium,Serbia and Kosovo,1872
+2004,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1872
 2004,Belgium,Slovakia,
-2004,Belgium,Syrian Arab Rep.,80
+2004,Belgium,"Syrian Arab Rep.",80
 2004,Belgium,Chad,8
 2004,Belgium,Togo,19
 2004,Belgium,Tibetan,2
@@ -775,40 +779,40 @@ year,country,origin,refugees
 2004,Belgium,Ukraine,144
 2004,Belgium,Uruguay,5
 2004,Belgium,Uzbekistan,41
-2004,Belgium,Viet Nam,130
+2004,Belgium,"Viet Nam",130
 2004,Belgium,Stateless,338
 2004,Belgium,Various/Unknown,2783
 2004,Belgium,Yemen,2
-2004,Belgium,South Africa,2
+2004,Belgium,"South Africa",2
 2005,Belgium,Afghanistan,381
 2005,Belgium,Angola,122
 2005,Belgium,Albania,201
-2005,Belgium,United Arab Emirates,
+2005,Belgium,"United Arab Emirates",
 2005,Belgium,Armenia,34
 2005,Belgium,Azerbaijan,46
 2005,Belgium,Burundi,312
 2005,Belgium,Belgium,
 2005,Belgium,Benin,1
-2005,Belgium,Burkina Faso,1
+2005,Belgium,"Burkina Faso",1
 2005,Belgium,Bangladesh,5
 2005,Belgium,Bulgaria,35
-2005,Belgium,Bosnia and Herzegovina,164
+2005,Belgium,"Bosnia and Herzegovina",164
 2005,Belgium,Belarus,146
-2005,Belgium,Bolivia,10
+2005,Belgium,"Bolivia (Plurinational State of)",10
 2005,Belgium,Bhutan,
-2005,Belgium,Central African Rep.,2
+2005,Belgium,"Central African Rep.",2
 2005,Belgium,Chile,87
 2005,Belgium,China,97
-2005,Belgium,Ivory Coast,33
+2005,Belgium,"Côte d'Ivoire",33
 2005,Belgium,Cameroon,45
-2005,Belgium,Dem. Rep. of the Congo,866
+2005,Belgium,"Dem. Rep. of the Congo",866
 2005,Belgium,Congo,38
 2005,Belgium,Colombia,62
 2005,Belgium,Cuba,
-2005,Belgium,Czech Rep.,18
+2005,Belgium,"Czech Rep.",18
 2005,Belgium,Germany,5
 2005,Belgium,Djibouti,92
-2005,Belgium,Dominican Rep.,1
+2005,Belgium,"Dominican Rep.",1
 2005,Belgium,Algeria,80
 2005,Belgium,Ecuador,4
 2005,Belgium,Egypt,1
@@ -822,7 +826,7 @@ year,country,origin,refugees
 2005,Belgium,Guinea,73
 2005,Belgium,Gambia,
 2005,Belgium,Guinea-Bissau,8
-2005,Belgium,Equatorial Guinea,
+2005,Belgium,"Equatorial Guinea",
 2005,Belgium,Greece,1
 2005,Belgium,Guatemala,8
 2005,Belgium,Croatia,7
@@ -830,7 +834,7 @@ year,country,origin,refugees
 2005,Belgium,Hungary,147
 2005,Belgium,Indonesia,
 2005,Belgium,India,5
-2005,Belgium,Iran,327
+2005,Belgium,"Iran (Islamic Rep. of)",327
 2005,Belgium,Iraq,231
 2005,Belgium,Israel,4
 2005,Belgium,Jordan,12
@@ -838,19 +842,19 @@ year,country,origin,refugees
 2005,Belgium,Kenya,1
 2005,Belgium,Kyrgyzstan,27
 2005,Belgium,Cambodia,34
-2005,Belgium,South Korea,4
+2005,Belgium,"Rep. of Korea",4
 2005,Belgium,Kuwait,
-2005,Belgium,Laos,33
+2005,Belgium,"Lao People's Dem. Rep.",33
 2005,Belgium,Lebanon,22
 2005,Belgium,Liberia,12
 2005,Belgium,Libya,
-2005,Belgium,Sri Lanka,4
+2005,Belgium,"Sri Lanka",4
 2005,Belgium,Lithuania,24
 2005,Belgium,Latvia,19
 2005,Belgium,Morocco,7
-2005,Belgium,Rep. of Moldova,6
+2005,Belgium,"Rep. of Moldova",6
 2005,Belgium,Madagascar,5
-2005,Belgium,Macedonia,49
+2005,Belgium,"The former Yugoslav Republic of Macedonia",49
 2005,Belgium,Mali,
 2005,Belgium,Myanmar,9
 2005,Belgium,Mongolia,
@@ -864,20 +868,20 @@ year,country,origin,refugees
 2005,Belgium,Pakistan,74
 2005,Belgium,Peru,3
 2005,Belgium,Poland,484
-2005,Belgium,North Korea,
+2005,Belgium,"Dem. People's Rep. of Korea",
 2005,Belgium,Portugal,1
 2005,Belgium,Palestinian,35
 2005,Belgium,Romania,62
-2005,Belgium,Russian Federation,3899
+2005,Belgium,"Russian Federation",3899
 2005,Belgium,Rwanda,1929
 2005,Belgium,Sudan,33
 2005,Belgium,Senegal,3
-2005,Belgium,Sierra Leone,5
-2005,Belgium,El Salvador,2
+2005,Belgium,"Sierra Leone",5
+2005,Belgium,"El Salvador",2
 2005,Belgium,Somalia,108
-2005,Belgium,Serbia and Kosovo,1889
+2005,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1889
 2005,Belgium,Slovakia,
-2005,Belgium,Syrian Arab Rep.,115
+2005,Belgium,"Syrian Arab Rep.",115
 2005,Belgium,Chad,9
 2005,Belgium,Togo,47
 2005,Belgium,Tibetan,7
@@ -885,47 +889,47 @@ year,country,origin,refugees
 2005,Belgium,Turkmenistan,
 2005,Belgium,Tunisia,21
 2005,Belgium,Turkey,468
-2005,Belgium,Tanzania,4
+2005,Belgium,"United Rep. of Tanzania",4
 2005,Belgium,Uganda,2
 2005,Belgium,Ukraine,138
 2005,Belgium,Uruguay,4
 2005,Belgium,Uzbekistan,34
-2005,Belgium,Venezuela,
-2005,Belgium,Viet Nam,98
+2005,Belgium,"Venezuela (Bolivarian Republic of)",
+2005,Belgium,"Viet Nam",98
 2005,Belgium,Stateless,366
 2005,Belgium,Various/Unknown,1270
 2005,Belgium,Yemen,9
-2005,Belgium,South Africa,2
+2005,Belgium,"South Africa",2
 2005,Belgium,Zimbabwe,
 2006,Belgium,Afghanistan,226
 2006,Belgium,Angola,126
 2006,Belgium,Albania,165
-2006,Belgium,United Arab Emirates,
+2006,Belgium,"United Arab Emirates",
 2006,Belgium,Armenia,40
 2006,Belgium,Azerbaijan,45
 2006,Belgium,Burundi,294
 2006,Belgium,Belgium,
 2006,Belgium,Benin,2
-2006,Belgium,Burkina Faso,8
+2006,Belgium,"Burkina Faso",8
 2006,Belgium,Bangladesh,4
 2006,Belgium,Bulgaria,30
-2006,Belgium,Bosnia and Herzegovina,145
+2006,Belgium,"Bosnia and Herzegovina",145
 2006,Belgium,Belarus,170
-2006,Belgium,Bolivia,10
+2006,Belgium,"Bolivia (Plurinational State of)",10
 2006,Belgium,Bhutan,2
-2006,Belgium,Central African Rep.,5
+2006,Belgium,"Central African Rep.",5
 2006,Belgium,Chile,76
 2006,Belgium,China,149
-2006,Belgium,Ivory Coast,189
+2006,Belgium,"Côte d'Ivoire",189
 2006,Belgium,Cameroon,82
-2006,Belgium,Dem. Rep. of the Congo,884
+2006,Belgium,"Dem. Rep. of the Congo",884
 2006,Belgium,Congo,55
 2006,Belgium,Colombia,54
 2006,Belgium,Cuba,1
-2006,Belgium,Czech Rep.,16
+2006,Belgium,"Czech Rep.",16
 2006,Belgium,Germany,4
 2006,Belgium,Djibouti,85
-2006,Belgium,Dominican Rep.,1
+2006,Belgium,"Dominican Rep.",1
 2006,Belgium,Algeria,54
 2006,Belgium,Ecuador,2
 2006,Belgium,Egypt,1
@@ -939,7 +943,7 @@ year,country,origin,refugees
 2006,Belgium,Guinea,218
 2006,Belgium,Gambia,
 2006,Belgium,Guinea-Bissau,8
-2006,Belgium,Equatorial Guinea,
+2006,Belgium,"Equatorial Guinea",
 2006,Belgium,Greece,1
 2006,Belgium,Guatemala,7
 2006,Belgium,Croatia,10
@@ -947,7 +951,7 @@ year,country,origin,refugees
 2006,Belgium,Hungary,133
 2006,Belgium,Indonesia,
 2006,Belgium,India,4
-2006,Belgium,Iran,379
+2006,Belgium,"Iran (Islamic Rep. of)",379
 2006,Belgium,Iraq,253
 2006,Belgium,Israel,5
 2006,Belgium,Jordan,4
@@ -955,19 +959,19 @@ year,country,origin,refugees
 2006,Belgium,Kenya,
 2006,Belgium,Kyrgyzstan,36
 2006,Belgium,Cambodia,25
-2006,Belgium,South Korea,6
+2006,Belgium,"Rep. of Korea",6
 2006,Belgium,Kuwait,
-2006,Belgium,Laos,30
+2006,Belgium,"Lao People's Dem. Rep.",30
 2006,Belgium,Lebanon,14
 2006,Belgium,Liberia,15
 2006,Belgium,Libya,
-2006,Belgium,Sri Lanka,8
+2006,Belgium,"Sri Lanka",8
 2006,Belgium,Lithuania,23
 2006,Belgium,Latvia,18
 2006,Belgium,Morocco,8
-2006,Belgium,Rep. of Moldova,11
+2006,Belgium,"Rep. of Moldova",11
 2006,Belgium,Madagascar,4
-2006,Belgium,Macedonia,36
+2006,Belgium,"The former Yugoslav Republic of Macedonia",36
 2006,Belgium,Mali,
 2006,Belgium,Myanmar,4
 2006,Belgium,Mongolia,
@@ -981,20 +985,20 @@ year,country,origin,refugees
 2006,Belgium,Pakistan,72
 2006,Belgium,Peru,2
 2006,Belgium,Poland,432
-2006,Belgium,North Korea,
+2006,Belgium,"Dem. People's Rep. of Korea",
 2006,Belgium,Portugal,2
 2006,Belgium,Palestinian,40
 2006,Belgium,Romania,57
-2006,Belgium,Russian Federation,5425
+2006,Belgium,"Russian Federation",5425
 2006,Belgium,Rwanda,1833
 2006,Belgium,Sudan,49
 2006,Belgium,Senegal,6
-2006,Belgium,Sierra Leone,16
-2006,Belgium,El Salvador,2
+2006,Belgium,"Sierra Leone",16
+2006,Belgium,"El Salvador",2
 2006,Belgium,Somalia,111
-2006,Belgium,Serbia and Kosovo,1606
+2006,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1606
 2006,Belgium,Slovakia,
-2006,Belgium,Syrian Arab Rep.,100
+2006,Belgium,"Syrian Arab Rep.",100
 2006,Belgium,Chad,19
 2006,Belgium,Togo,84
 2006,Belgium,Tibetan,16
@@ -1002,16 +1006,16 @@ year,country,origin,refugees
 2006,Belgium,Turkmenistan,
 2006,Belgium,Tunisia,13
 2006,Belgium,Turkey,463
-2006,Belgium,Tanzania,5
+2006,Belgium,"United Rep. of Tanzania",5
 2006,Belgium,Uganda,7
 2006,Belgium,Ukraine,126
 2006,Belgium,Uruguay,4
 2006,Belgium,Uzbekistan,36
-2006,Belgium,Viet Nam,88
+2006,Belgium,"Viet Nam",88
 2006,Belgium,Stateless,13
 2006,Belgium,Various/Unknown,1710
 2006,Belgium,Yemen,16
-2006,Belgium,South Africa,2
+2006,Belgium,"South Africa",2
 2006,Belgium,Zimbabwe,
 2007,Belgium,Afghanistan,151
 2007,Belgium,Angola,133
@@ -1021,25 +1025,25 @@ year,country,origin,refugees
 2007,Belgium,Burundi,258
 2007,Belgium,Belgium,
 2007,Belgium,Benin,3
-2007,Belgium,Burkina Faso,11
+2007,Belgium,"Burkina Faso",11
 2007,Belgium,Bangladesh,8
 2007,Belgium,Bulgaria,45
-2007,Belgium,Bosnia and Herzegovina,112
+2007,Belgium,"Bosnia and Herzegovina",112
 2007,Belgium,Belarus,159
-2007,Belgium,Bolivia,9
+2007,Belgium,"Bolivia (Plurinational State of)",9
 2007,Belgium,Bhutan,3
-2007,Belgium,Central African Rep.,5
+2007,Belgium,"Central African Rep.",5
 2007,Belgium,Chile,72
 2007,Belgium,China,225
-2007,Belgium,Ivory Coast,246
+2007,Belgium,"Côte d'Ivoire",246
 2007,Belgium,Cameroon,108
-2007,Belgium,Dem. Rep. of the Congo,1093
+2007,Belgium,"Dem. Rep. of the Congo",1093
 2007,Belgium,Congo,41
 2007,Belgium,Colombia,37
-2007,Belgium,Czech Rep.,14
+2007,Belgium,"Czech Rep.",14
 2007,Belgium,Germany,4
 2007,Belgium,Djibouti,59
-2007,Belgium,Dominican Rep.,1
+2007,Belgium,"Dominican Rep.",1
 2007,Belgium,Algeria,54
 2007,Belgium,Egypt,2
 2007,Belgium,Eritrea,11
@@ -1057,7 +1061,7 @@ year,country,origin,refugees
 2007,Belgium,Haiti,9
 2007,Belgium,Hungary,127
 2007,Belgium,India,3
-2007,Belgium,Iran,347
+2007,Belgium,"Iran (Islamic Rep. of)",347
 2007,Belgium,Iraq,292
 2007,Belgium,Israel,4
 2007,Belgium,Jordan,5
@@ -1065,17 +1069,17 @@ year,country,origin,refugees
 2007,Belgium,Kenya,1
 2007,Belgium,Kyrgyzstan,21
 2007,Belgium,Cambodia,29
-2007,Belgium,Laos,27
+2007,Belgium,"Lao People's Dem. Rep.",27
 2007,Belgium,Lebanon,28
 2007,Belgium,Liberia,12
 2007,Belgium,Libya,5
-2007,Belgium,Sri Lanka,20
+2007,Belgium,"Sri Lanka",20
 2007,Belgium,Lithuania,24
 2007,Belgium,Latvia,8
 2007,Belgium,Morocco,9
-2007,Belgium,Rep. of Moldova,7
+2007,Belgium,"Rep. of Moldova",7
 2007,Belgium,Madagascar,4
-2007,Belgium,Macedonia,21
+2007,Belgium,"The former Yugoslav Republic of Macedonia",21
 2007,Belgium,Mali,1
 2007,Belgium,Myanmar,5
 2007,Belgium,Mauritania,71
@@ -1086,33 +1090,33 @@ year,country,origin,refugees
 2007,Belgium,Pakistan,55
 2007,Belgium,Peru,4
 2007,Belgium,Poland,377
-2007,Belgium,North Korea,7
+2007,Belgium,"Dem. People's Rep. of Korea",7
 2007,Belgium,Portugal,2
 2007,Belgium,Palestinian,44
 2007,Belgium,Romania,57
-2007,Belgium,Russian Federation,5150
+2007,Belgium,"Russian Federation",5150
 2007,Belgium,Rwanda,1350
 2007,Belgium,Sudan,39
 2007,Belgium,Senegal,11
-2007,Belgium,Sierra Leone,17
+2007,Belgium,"Sierra Leone",17
 2007,Belgium,Somalia,94
-2007,Belgium,Serbia and Kosovo,1320
-2007,Belgium,Syrian Arab Rep.,114
+2007,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1320
+2007,Belgium,"Syrian Arab Rep.",114
 2007,Belgium,Chad,32
 2007,Belgium,Togo,101
 2007,Belgium,Tibetan,17
 2007,Belgium,Tunisia,24
 2007,Belgium,Turkey,421
-2007,Belgium,Tanzania,5
+2007,Belgium,"United Rep. of Tanzania",5
 2007,Belgium,Uganda,8
 2007,Belgium,Ukraine,109
 2007,Belgium,Uruguay,4
 2007,Belgium,Uzbekistan,36
-2007,Belgium,Viet Nam,80
+2007,Belgium,"Viet Nam",80
 2007,Belgium,Stateless,13
 2007,Belgium,Various/Unknown,3405
 2007,Belgium,Yemen,12
-2007,Belgium,South Africa,2
+2007,Belgium,"South Africa",2
 2008,Belgium,Afghanistan,196
 2008,Belgium,Angola,128
 2008,Belgium,Albania,181
@@ -1121,25 +1125,25 @@ year,country,origin,refugees
 2008,Belgium,Burundi,243
 2008,Belgium,Belgium,
 2008,Belgium,Benin,1
-2008,Belgium,Burkina Faso,13
+2008,Belgium,"Burkina Faso",13
 2008,Belgium,Bangladesh,8
 2008,Belgium,Bulgaria,41
-2008,Belgium,Bosnia and Herzegovina,97
+2008,Belgium,"Bosnia and Herzegovina",97
 2008,Belgium,Belarus,124
-2008,Belgium,Bolivia,8
+2008,Belgium,"Bolivia (Plurinational State of)",8
 2008,Belgium,Bhutan,2
-2008,Belgium,Central African Rep.,15
+2008,Belgium,"Central African Rep.",15
 2008,Belgium,Chile,65
 2008,Belgium,China,273
 2008,Belgium,Cameroon,163
-2008,Belgium,Dem. Rep. of the Congo,784
+2008,Belgium,"Dem. Rep. of the Congo",784
 2008,Belgium,Congo,36
 2008,Belgium,Colombia,29
 2008,Belgium,Comoros,225
-2008,Belgium,Czech Rep.,13
+2008,Belgium,"Czech Rep.",13
 2008,Belgium,Germany,4
 2008,Belgium,Djibouti,50
-2008,Belgium,Dominican Rep.,1
+2008,Belgium,"Dominican Rep.",1
 2008,Belgium,Algeria,41
 2008,Belgium,Egypt,7
 2008,Belgium,Eritrea,16
@@ -1157,7 +1161,7 @@ year,country,origin,refugees
 2008,Belgium,Haiti,8
 2008,Belgium,Hungary,112
 2008,Belgium,India,2
-2008,Belgium,Iran,305
+2008,Belgium,"Iran (Islamic Rep. of)",305
 2008,Belgium,Iraq,494
 2008,Belgium,Israel,1
 2008,Belgium,Jordan,6
@@ -1165,17 +1169,17 @@ year,country,origin,refugees
 2008,Belgium,Kenya,9
 2008,Belgium,Kyrgyzstan,16
 2008,Belgium,Cambodia,18
-2008,Belgium,Laos,23
+2008,Belgium,"Lao People's Dem. Rep.",23
 2008,Belgium,Lebanon,41
 2008,Belgium,Liberia,13
 2008,Belgium,Libya,13
-2008,Belgium,Sri Lanka,87
+2008,Belgium,"Sri Lanka",87
 2008,Belgium,Lithuania,21
 2008,Belgium,Latvia,7
 2008,Belgium,Morocco,9
-2008,Belgium,Rep. of Moldova,7
+2008,Belgium,"Rep. of Moldova",7
 2008,Belgium,Madagascar,3
-2008,Belgium,Macedonia,10
+2008,Belgium,"The former Yugoslav Republic of Macedonia",10
 2008,Belgium,Mali,5
 2008,Belgium,Myanmar,12
 2008,Belgium,Mauritania,76
@@ -1186,32 +1190,32 @@ year,country,origin,refugees
 2008,Belgium,Pakistan,56
 2008,Belgium,Peru,4
 2008,Belgium,Poland,335
-2008,Belgium,North Korea,9
+2008,Belgium,"Dem. People's Rep. of Korea",9
 2008,Belgium,Portugal,1
 2008,Belgium,Palestinian,40
 2008,Belgium,Romania,50
-2008,Belgium,Russian Federation,3981
+2008,Belgium,"Russian Federation",3981
 2008,Belgium,Rwanda,1108
 2008,Belgium,Sudan,47
 2008,Belgium,Senegal,20
-2008,Belgium,Sierra Leone,25
+2008,Belgium,"Sierra Leone",25
 2008,Belgium,Somalia,89
-2008,Belgium,Serbia and Kosovo,1172
-2008,Belgium,Syrian Arab Rep.,152
+2008,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1172
+2008,Belgium,"Syrian Arab Rep.",152
 2008,Belgium,Chad,35
 2008,Belgium,Togo,112
 2008,Belgium,Tibetan,17
 2008,Belgium,Tunisia,16
 2008,Belgium,Turkey,437
-2008,Belgium,Tanzania,10
+2008,Belgium,"United Rep. of Tanzania",10
 2008,Belgium,Uganda,8
 2008,Belgium,Ukraine,100
 2008,Belgium,Uruguay,2
 2008,Belgium,Uzbekistan,33
-2008,Belgium,Viet Nam,71
+2008,Belgium,"Viet Nam",71
 2008,Belgium,Various/Unknown,4274
 2008,Belgium,Yemen,3
-2008,Belgium,South Africa,2
+2008,Belgium,"South Africa",2
 2009,Belgium,Afghanistan,271
 2009,Belgium,Angola,109
 2009,Belgium,Albania,195
@@ -1220,26 +1224,26 @@ year,country,origin,refugees
 2009,Belgium,Burundi,245
 2009,Belgium,Belgium,
 2009,Belgium,Benin,1
-2009,Belgium,Burkina Faso,21
+2009,Belgium,"Burkina Faso",21
 2009,Belgium,Bangladesh,10
 2009,Belgium,Bulgaria,34
-2009,Belgium,Bosnia and Herzegovina,84
+2009,Belgium,"Bosnia and Herzegovina",84
 2009,Belgium,Belarus,108
-2009,Belgium,Bolivia,5
+2009,Belgium,"Bolivia (Plurinational State of)",5
 2009,Belgium,Bhutan,2
-2009,Belgium,Central African Rep.,19
+2009,Belgium,"Central African Rep.",19
 2009,Belgium,Chile,62
 2009,Belgium,China,384
-2009,Belgium,Ivory Coast,201
+2009,Belgium,"Côte d'Ivoire",201
 2009,Belgium,Cameroon,220
-2009,Belgium,Dem. Rep. of the Congo,748
+2009,Belgium,"Dem. Rep. of the Congo",748
 2009,Belgium,Congo,34
 2009,Belgium,Colombia,32
 2009,Belgium,Cuba,1
-2009,Belgium,Czech Rep.,11
+2009,Belgium,"Czech Rep.",11
 2009,Belgium,Germany,4
 2009,Belgium,Djibouti,59
-2009,Belgium,Dominican Rep.,1
+2009,Belgium,"Dominican Rep.",1
 2009,Belgium,Algeria,36
 2009,Belgium,Egypt,9
 2009,Belgium,Eritrea,24
@@ -1257,7 +1261,7 @@ year,country,origin,refugees
 2009,Belgium,Haiti,8
 2009,Belgium,Hungary,103
 2009,Belgium,India,2
-2009,Belgium,Iran,339
+2009,Belgium,"Iran (Islamic Rep. of)",339
 2009,Belgium,Iraq,718
 2009,Belgium,Israel,1
 2009,Belgium,Jordan,13
@@ -1265,17 +1269,17 @@ year,country,origin,refugees
 2009,Belgium,Kenya,16
 2009,Belgium,Kyrgyzstan,10
 2009,Belgium,Cambodia,16
-2009,Belgium,Laos,21
+2009,Belgium,"Lao People's Dem. Rep.",21
 2009,Belgium,Lebanon,50
 2009,Belgium,Liberia,14
 2009,Belgium,Libya,13
-2009,Belgium,Sri Lanka,160
+2009,Belgium,"Sri Lanka",160
 2009,Belgium,Lithuania,18
 2009,Belgium,Latvia,5
 2009,Belgium,Morocco,14
-2009,Belgium,Rep. of Moldova,6
+2009,Belgium,"Rep. of Moldova",6
 2009,Belgium,Madagascar,1
-2009,Belgium,Macedonia,11
+2009,Belgium,"The former Yugoslav Republic of Macedonia",11
 2009,Belgium,Mali,4
 2009,Belgium,Myanmar,9
 2009,Belgium,Mauritania,116
@@ -1286,61 +1290,61 @@ year,country,origin,refugees
 2009,Belgium,Pakistan,55
 2009,Belgium,Peru,4
 2009,Belgium,Poland,302
-2009,Belgium,North Korea,13
+2009,Belgium,"Dem. People's Rep. of Korea",13
 2009,Belgium,Portugal,1
 2009,Belgium,Palestinian,52
 2009,Belgium,Romania,45
-2009,Belgium,Russian Federation,3428
+2009,Belgium,"Russian Federation",3428
 2009,Belgium,Rwanda,1046
 2009,Belgium,Sudan,48
 2009,Belgium,Senegal,35
-2009,Belgium,Sierra Leone,34
+2009,Belgium,"Sierra Leone",34
 2009,Belgium,Somalia,98
-2009,Belgium,Serbia and Kosovo,1059
-2009,Belgium,Syrian Arab Rep.,177
+2009,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1059
+2009,Belgium,"Syrian Arab Rep.",177
 2009,Belgium,Chad,39
 2009,Belgium,Togo,112
 2009,Belgium,Tibetan,15
 2009,Belgium,Tunisia,17
 2009,Belgium,Turkey,471
-2009,Belgium,Tanzania,14
+2009,Belgium,"United Rep. of Tanzania",14
 2009,Belgium,Uganda,9
 2009,Belgium,Ukraine,89
 2009,Belgium,Uruguay,2
 2009,Belgium,Uzbekistan,36
-2009,Belgium,Viet Nam,64
+2009,Belgium,"Viet Nam",64
 2009,Belgium,Various/Unknown,2681
 2009,Belgium,Yemen,3
-2009,Belgium,South Africa,2
+2009,Belgium,"South Africa",2
 2010,Belgium,Afghanistan,501
 2010,Belgium,Angola,117
 2010,Belgium,Albania,216
-2010,Belgium,United Arab Emirates,2
+2010,Belgium,"United Arab Emirates",2
 2010,Belgium,Armenia,61
 2010,Belgium,Azerbaijan,26
 2010,Belgium,Burundi,255
 2010,Belgium,Belgium,
 2010,Belgium,Benin,2
-2010,Belgium,Burkina Faso,24
+2010,Belgium,"Burkina Faso",24
 2010,Belgium,Bangladesh,10
 2010,Belgium,Bulgaria,24
-2010,Belgium,Bosnia and Herzegovina,67
+2010,Belgium,"Bosnia and Herzegovina",67
 2010,Belgium,Belarus,76
-2010,Belgium,Bolivia,4
+2010,Belgium,"Bolivia (Plurinational State of)",4
 2010,Belgium,Bhutan,2
-2010,Belgium,Central African Rep.,18
+2010,Belgium,"Central African Rep.",18
 2010,Belgium,Chile,59
 2010,Belgium,China,441
-2010,Belgium,Ivory Coast,185
+2010,Belgium,"Côte d'Ivoire",185
 2010,Belgium,Cameroon,266
-2010,Belgium,Dem. Rep. of the Congo,689
+2010,Belgium,"Dem. Rep. of the Congo",689
 2010,Belgium,Congo,31
 2010,Belgium,Colombia,33
 2010,Belgium,Cuba,1
-2010,Belgium,Czech Rep.,11
+2010,Belgium,"Czech Rep.",11
 2010,Belgium,Germany,3
 2010,Belgium,Djibouti,68
-2010,Belgium,Dominican Rep.,1
+2010,Belgium,"Dominican Rep.",1
 2010,Belgium,Algeria,35
 2010,Belgium,Egypt,9
 2010,Belgium,Eritrea,36
@@ -1357,7 +1361,7 @@ year,country,origin,refugees
 2010,Belgium,Haiti,6
 2010,Belgium,Hungary,88
 2010,Belgium,India,3
-2010,Belgium,Iran,341
+2010,Belgium,"Iran (Islamic Rep. of)",341
 2010,Belgium,Iraq,962
 2010,Belgium,Israel,1
 2010,Belgium,Jordan,17
@@ -1365,16 +1369,16 @@ year,country,origin,refugees
 2010,Belgium,Kenya,18
 2010,Belgium,Kyrgyzstan,10
 2010,Belgium,Cambodia,13
-2010,Belgium,Laos,16
+2010,Belgium,"Lao People's Dem. Rep.",16
 2010,Belgium,Lebanon,62
 2010,Belgium,Liberia,21
 2010,Belgium,Libya,10
-2010,Belgium,Sri Lanka,212
+2010,Belgium,"Sri Lanka",212
 2010,Belgium,Lithuania,17
 2010,Belgium,Latvia,5
 2010,Belgium,Morocco,16
-2010,Belgium,Rep. of Moldova,3
-2010,Belgium,Macedonia,22
+2010,Belgium,"Rep. of Moldova",3
+2010,Belgium,"The former Yugoslav Republic of Macedonia",22
 2010,Belgium,Mali,5
 2010,Belgium,Myanmar,11
 2010,Belgium,Mauritania,128
@@ -1386,63 +1390,63 @@ year,country,origin,refugees
 2010,Belgium,Pakistan,45
 2010,Belgium,Peru,4
 2010,Belgium,Poland,274
-2010,Belgium,North Korea,22
+2010,Belgium,"Dem. People's Rep. of Korea",22
 2010,Belgium,Portugal,1
 2010,Belgium,Palestinian,122
 2010,Belgium,Romania,40
-2010,Belgium,Russian Federation,2964
+2010,Belgium,"Russian Federation",2964
 2010,Belgium,Rwanda,981
 2010,Belgium,Sudan,63
 2010,Belgium,Senegal,75
-2010,Belgium,Sierra Leone,30
+2010,Belgium,"Sierra Leone",30
 2010,Belgium,Somalia,117
-2010,Belgium,Serbia and Kosovo,1040
-2010,Belgium,Syrian Arab Rep.,229
+2010,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1040
+2010,Belgium,"Syrian Arab Rep.",229
 2010,Belgium,Chad,49
 2010,Belgium,Togo,123
 2010,Belgium,Tibetan,16
 2010,Belgium,Tunisia,11
 2010,Belgium,Turkey,510
-2010,Belgium,Tanzania,28
+2010,Belgium,"United Rep. of Tanzania",28
 2010,Belgium,Uganda,13
 2010,Belgium,Ukraine,86
 2010,Belgium,Uruguay,3
 2010,Belgium,Uzbekistan,33
-2010,Belgium,Viet Nam,59
+2010,Belgium,"Viet Nam",59
 2010,Belgium,Various/Unknown,4478
 2010,Belgium,Yemen,3
-2010,Belgium,South Africa,2
+2010,Belgium,"South Africa",2
 2011,Belgium,Afghanistan,785
 2011,Belgium,Angola,120
 2011,Belgium,Albania,228
-2011,Belgium,United Arab Emirates,2
+2011,Belgium,"United Arab Emirates",2
 2011,Belgium,Argentina,
 2011,Belgium,Armenia,64
 2011,Belgium,Azerbaijan,29
 2011,Belgium,Burundi,274
 2011,Belgium,Belgium,
 2011,Belgium,Benin,10
-2011,Belgium,Burkina Faso,27
+2011,Belgium,"Burkina Faso",27
 2011,Belgium,Bangladesh,9
 2011,Belgium,Bulgaria,22
-2011,Belgium,Bosnia and Herzegovina,51
+2011,Belgium,"Bosnia and Herzegovina",51
 2011,Belgium,Belarus,63
-2011,Belgium,Bolivia,4
+2011,Belgium,"Bolivia (Plurinational State of)",4
 2011,Belgium,Brazil,
 2011,Belgium,Bhutan,2
-2011,Belgium,Central African Rep.,17
+2011,Belgium,"Central African Rep.",17
 2011,Belgium,Chile,58
 2011,Belgium,China,603
-2011,Belgium,Ivory Coast,186
+2011,Belgium,"Côte d'Ivoire",186
 2011,Belgium,Cameroon,324
-2011,Belgium,Dem. Rep. of the Congo,711
+2011,Belgium,"Dem. Rep. of the Congo",711
 2011,Belgium,Congo,35
 2011,Belgium,Colombia,39
 2011,Belgium,Cuba,1
-2011,Belgium,Czech Rep.,11
+2011,Belgium,"Czech Rep.",11
 2011,Belgium,Germany,3
 2011,Belgium,Djibouti,84
-2011,Belgium,Dominican Rep.,1
+2011,Belgium,"Dominican Rep.",1
 2011,Belgium,Algeria,37
 2011,Belgium,Egypt,11
 2011,Belgium,Eritrea,81
@@ -1457,13 +1461,13 @@ year,country,origin,refugees
 2011,Belgium,Guinea,1493
 2011,Belgium,Gambia,
 2011,Belgium,Guinea-Bissau,9
-2011,Belgium,Equatorial Guinea,
+2011,Belgium,"Equatorial Guinea",
 2011,Belgium,Guatemala,5
 2011,Belgium,Croatia,7
 2011,Belgium,Haiti,6
 2011,Belgium,Hungary,86
 2011,Belgium,India,5
-2011,Belgium,Iran,347
+2011,Belgium,"Iran (Islamic Rep. of)",347
 2011,Belgium,Iraq,1329
 2011,Belgium,Israel,1
 2011,Belgium,Jordan,22
@@ -1472,17 +1476,17 @@ year,country,origin,refugees
 2011,Belgium,Kyrgyzstan,8
 2011,Belgium,Cambodia,13
 2011,Belgium,Kuwait,1
-2011,Belgium,Laos,16
+2011,Belgium,"Lao People's Dem. Rep.",16
 2011,Belgium,Lebanon,89
 2011,Belgium,Liberia,23
 2011,Belgium,Libya,9
-2011,Belgium,Sri Lanka,264
+2011,Belgium,"Sri Lanka",264
 2011,Belgium,Lithuania,17
 2011,Belgium,Latvia,5
 2011,Belgium,Morocco,17
-2011,Belgium,Rep. of Moldova,3
+2011,Belgium,"Rep. of Moldova",3
 2011,Belgium,Madagascar,2
-2011,Belgium,Macedonia,33
+2011,Belgium,"The former Yugoslav Republic of Macedonia",33
 2011,Belgium,Mali,9
 2011,Belgium,Myanmar,18
 2011,Belgium,Montenegro,
@@ -1498,72 +1502,72 @@ year,country,origin,refugees
 2011,Belgium,Pakistan,41
 2011,Belgium,Peru,4
 2011,Belgium,Poland,244
-2011,Belgium,North Korea,31
+2011,Belgium,"Dem. People's Rep. of Korea",31
 2011,Belgium,Portugal,1
 2011,Belgium,Palestinian,76
 2011,Belgium,Romania,40
-2011,Belgium,Russian Federation,2894
+2011,Belgium,"Russian Federation",2894
 2011,Belgium,Rwanda,1026
-2011,Belgium,Saudi Arabia,
+2011,Belgium,"Saudi Arabia",
 2011,Belgium,Sudan,65
 2011,Belgium,Senegal,182
-2011,Belgium,Sierra Leone,40
-2011,Belgium,El Salvador,
+2011,Belgium,"Sierra Leone",40
+2011,Belgium,"El Salvador",
 2011,Belgium,Somalia,247
-2011,Belgium,Serbia and Kosovo,1066
+2011,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",1066
 2011,Belgium,Suriname,
-2011,Belgium,Syrian Arab Rep.,312
+2011,Belgium,"Syrian Arab Rep.",312
 2011,Belgium,Chad,51
 2011,Belgium,Togo,132
 2011,Belgium,Tajikistan,
 2011,Belgium,Turkmenistan,1
 2011,Belgium,Tunisia,11
 2011,Belgium,Turkey,512
-2011,Belgium,Tanzania,45
+2011,Belgium,"United Rep. of Tanzania",45
 2011,Belgium,Uganda,16
 2011,Belgium,Ukraine,84
 2011,Belgium,Uruguay,3
-2011,Belgium,United States of America,
+2011,Belgium,"United States of America",
 2011,Belgium,Uzbekistan,32
-2011,Belgium,Viet Nam,52
+2011,Belgium,"Viet Nam",52
 2011,Belgium,Stateless,
 2011,Belgium,Various/Unknown,7060
 2011,Belgium,Yemen,3
-2011,Belgium,South Africa,2
+2011,Belgium,"South Africa",2
 2011,Belgium,Zimbabwe,1
 2012,Belgium,Afghanistan,1267
 2012,Belgium,Angola,101
 2012,Belgium,Albania,318
-2012,Belgium,United Arab Emirates,2
+2012,Belgium,"United Arab Emirates",2
 2012,Belgium,Argentina,
 2012,Belgium,Armenia,99
 2012,Belgium,Azerbaijan,20
 2012,Belgium,Burundi,290
 2012,Belgium,Belgium,
 2012,Belgium,Benin,9
-2012,Belgium,Burkina Faso,48
+2012,Belgium,"Burkina Faso",48
 2012,Belgium,Bangladesh,9
 2012,Belgium,Bulgaria,19
-2012,Belgium,Bosnia and Herzegovina,46
+2012,Belgium,"Bosnia and Herzegovina",46
 2012,Belgium,Belarus,45
-2012,Belgium,Bolivia,4
+2012,Belgium,"Bolivia (Plurinational State of)",4
 2012,Belgium,Bhutan,2
-2012,Belgium,Central African Rep.,15
+2012,Belgium,"Central African Rep.",15
 2012,Belgium,Canada,
 2012,Belgium,Chile,56
 2012,Belgium,China,866
-2012,Belgium,Ivory Coast,155
+2012,Belgium,"Côte d'Ivoire",155
 2012,Belgium,Cameroon,345
-2012,Belgium,Dem. Rep. of the Congo,677
+2012,Belgium,"Dem. Rep. of the Congo",677
 2012,Belgium,Congo,31
 2012,Belgium,Colombia,39
 2012,Belgium,Comoros,
-2012,Belgium,Costa Rica,
+2012,Belgium,"Costa Rica",
 2012,Belgium,Cuba,1
-2012,Belgium,Czech Rep.,9
+2012,Belgium,"Czech Rep.",9
 2012,Belgium,Germany,3
 2012,Belgium,Djibouti,94
-2012,Belgium,Dominican Rep.,1
+2012,Belgium,"Dominican Rep.",1
 2012,Belgium,Algeria,33
 2012,Belgium,Egypt,18
 2012,Belgium,Eritrea,62
@@ -1577,7 +1581,7 @@ year,country,origin,refugees
 2012,Belgium,Guinea,1938
 2012,Belgium,Gambia,
 2012,Belgium,Guinea-Bissau,9
-2012,Belgium,Equatorial Guinea,
+2012,Belgium,"Equatorial Guinea",
 2012,Belgium,Guatemala,5
 2012,Belgium,Guyana,
 2012,Belgium,Honduras,
@@ -1585,7 +1589,7 @@ year,country,origin,refugees
 2012,Belgium,Haiti,4
 2012,Belgium,Hungary,75
 2012,Belgium,India,10
-2012,Belgium,Iran,411
+2012,Belgium,"Iran (Islamic Rep. of)",411
 2012,Belgium,Iraq,1541
 2012,Belgium,Israel,5
 2012,Belgium,Jordan,21
@@ -1593,19 +1597,19 @@ year,country,origin,refugees
 2012,Belgium,Kenya,28
 2012,Belgium,Kyrgyzstan,33
 2012,Belgium,Cambodia,13
-2012,Belgium,South Korea,
+2012,Belgium,"Rep. of Korea",
 2012,Belgium,Kuwait,4
-2012,Belgium,Laos,16
+2012,Belgium,"Lao People's Dem. Rep.",16
 2012,Belgium,Lebanon,87
 2012,Belgium,Liberia,22
 2012,Belgium,Libya,9
-2012,Belgium,Sri Lanka,302
+2012,Belgium,"Sri Lanka",302
 2012,Belgium,Lithuania,13
 2012,Belgium,Latvia,4
 2012,Belgium,Morocco,18
-2012,Belgium,Rep. of Moldova,3
+2012,Belgium,"Rep. of Moldova",3
 2012,Belgium,Madagascar,1
-2012,Belgium,Macedonia,45
+2012,Belgium,"The former Yugoslav Republic of Macedonia",45
 2012,Belgium,Mali,11
 2012,Belgium,Myanmar,17
 2012,Belgium,Mongolia,
@@ -1619,22 +1623,22 @@ year,country,origin,refugees
 2012,Belgium,Pakistan,39
 2012,Belgium,Peru,4
 2012,Belgium,Poland,220
-2012,Belgium,North Korea,61
+2012,Belgium,"Dem. People's Rep. of Korea",61
 2012,Belgium,Paraguay,
 2012,Belgium,Palestinian,130
 2012,Belgium,Romania,38
-2012,Belgium,Russian Federation,2661
+2012,Belgium,"Russian Federation",2661
 2012,Belgium,Rwanda,966
 2012,Belgium,Sudan,64
 2012,Belgium,Senegal,209
-2012,Belgium,Sierra Leone,34
-2012,Belgium,El Salvador,
+2012,Belgium,"Sierra Leone",34
+2012,Belgium,"El Salvador",
 2012,Belgium,Somalia,288
-2012,Belgium,Serbia and Kosovo,983
-2012,Belgium,South Sudan,
+2012,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",983
+2012,Belgium,"South Sudan",
 2012,Belgium,Suriname,
 2012,Belgium,Slovakia,
-2012,Belgium,Syrian Arab Rep.,355
+2012,Belgium,"Syrian Arab Rep.",355
 2012,Belgium,Chad,48
 2012,Belgium,Togo,115
 2012,Belgium,Thailand,1
@@ -1642,21 +1646,21 @@ year,country,origin,refugees
 2012,Belgium,Turkmenistan,
 2012,Belgium,Tunisia,11
 2012,Belgium,Turkey,514
-2012,Belgium,Tanzania,43
+2012,Belgium,"United Rep. of Tanzania",43
 2012,Belgium,Uganda,19
 2012,Belgium,Ukraine,85
 2012,Belgium,Uruguay,2
 2012,Belgium,Uzbekistan,18
-2012,Belgium,Viet Nam,48
+2012,Belgium,"Viet Nam",48
 2012,Belgium,Stateless,
 2012,Belgium,Various/Unknown,5326
 2012,Belgium,Yemen,4
-2012,Belgium,South Africa,2
+2012,Belgium,"South Africa",2
 2012,Belgium,Zambia,
 2013,Belgium,Afghanistan,4328
 2013,Belgium,Angola,67
 2013,Belgium,Albania,398
-2013,Belgium,United Arab Emirates,
+2013,Belgium,"United Arab Emirates",
 2013,Belgium,Argentina,3
 2013,Belgium,Armenia,129
 2013,Belgium,Austria,1
@@ -1664,31 +1668,31 @@ year,country,origin,refugees
 2013,Belgium,Burundi,309
 2013,Belgium,Belgium,
 2013,Belgium,Benin,22
-2013,Belgium,Burkina Faso,52
+2013,Belgium,"Burkina Faso",52
 2013,Belgium,Bangladesh,12
 2013,Belgium,Bulgaria,16
-2013,Belgium,Bosnia and Herzegovina,41
+2013,Belgium,"Bosnia and Herzegovina",41
 2013,Belgium,Belarus,43
-2013,Belgium,Bolivia,2
+2013,Belgium,"Bolivia (Plurinational State of)",2
 2013,Belgium,Brazil,
 2013,Belgium,Bhutan,2
-2013,Belgium,Central African Rep.,10
+2013,Belgium,"Central African Rep.",10
 2013,Belgium,Canada,
 2013,Belgium,Switzerland,1
 2013,Belgium,Chile,20
 2013,Belgium,China,958
-2013,Belgium,Ivory Coast,190
+2013,Belgium,"Côte d'Ivoire",190
 2013,Belgium,Cameroon,354
-2013,Belgium,Dem. Rep. of the Congo,916
+2013,Belgium,"Dem. Rep. of the Congo",916
 2013,Belgium,Congo,27
 2013,Belgium,Colombia,28
-2013,Belgium,Costa Rica,
+2013,Belgium,"Costa Rica",
 2013,Belgium,Cuba,2
-2013,Belgium,Czech Rep.,2
+2013,Belgium,"Czech Rep.",2
 2013,Belgium,Germany,1
 2013,Belgium,Djibouti,113
 2013,Belgium,Denmark,1
-2013,Belgium,Dominican Rep.,
+2013,Belgium,"Dominican Rep.",
 2013,Belgium,Algeria,28
 2013,Belgium,Egypt,19
 2013,Belgium,Eritrea,105
@@ -1696,19 +1700,19 @@ year,country,origin,refugees
 2013,Belgium,Ethiopia,82
 2013,Belgium,France,1
 2013,Belgium,Gabon,10
-2013,Belgium,United Kingdom,
+2013,Belgium,"United Kingdom",
 2013,Belgium,Georgia,33
 2013,Belgium,Ghana,18
 2013,Belgium,Guinea,2290
 2013,Belgium,Gambia,19
 2013,Belgium,Guinea-Bissau,7
-2013,Belgium,Equatorial Guinea,5
+2013,Belgium,"Equatorial Guinea",5
 2013,Belgium,Guatemala,7
 2013,Belgium,Croatia,7
 2013,Belgium,Haiti,2
 2013,Belgium,Hungary,21
 2013,Belgium,India,9
-2013,Belgium,Iran,486
+2013,Belgium,"Iran (Islamic Rep. of)",486
 2013,Belgium,Iraq,3058
 2013,Belgium,Israel,7
 2013,Belgium,Italy,1
@@ -1718,18 +1722,18 @@ year,country,origin,refugees
 2013,Belgium,Kyrgyzstan,56
 2013,Belgium,Cambodia,5
 2013,Belgium,Kuwait,4
-2013,Belgium,Laos,7
+2013,Belgium,"Lao People's Dem. Rep.",7
 2013,Belgium,Lebanon,66
 2013,Belgium,Liberia,17
 2013,Belgium,Libya,4
-2013,Belgium,Sri Lanka,313
+2013,Belgium,"Sri Lanka",313
 2013,Belgium,Lithuania,3
 2013,Belgium,Latvia,1
 2013,Belgium,Morocco,27
-2013,Belgium,Rep. of Moldova,3
+2013,Belgium,"Rep. of Moldova",3
 2013,Belgium,Madagascar,3
 2013,Belgium,Mexico,1
-2013,Belgium,Macedonia,
+2013,Belgium,"The former Yugoslav Republic of Macedonia",
 2013,Belgium,Mali,17
 2013,Belgium,Myanmar,18
 2013,Belgium,Montenegro,1
@@ -1746,38 +1750,38 @@ year,country,origin,refugees
 2013,Belgium,Pakistan,77
 2013,Belgium,Peru,4
 2013,Belgium,Poland,65
-2013,Belgium,North Korea,68
+2013,Belgium,"Dem. People's Rep. of Korea",68
 2013,Belgium,Palestinian,125
 2013,Belgium,Romania,25
-2013,Belgium,Russian Federation,2177
+2013,Belgium,"Russian Federation",2177
 2013,Belgium,Rwanda,798
-2013,Belgium,Saudi Arabia,
+2013,Belgium,"Saudi Arabia",
 2013,Belgium,Sudan,129
 2013,Belgium,Senegal,293
-2013,Belgium,Sierra Leone,29
-2013,Belgium,El Salvador,13
+2013,Belgium,"Sierra Leone",29
+2013,Belgium,"El Salvador",13
 2013,Belgium,Somalia,559
-2013,Belgium,Serbia and Kosovo,822
+2013,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",822
 2013,Belgium,Suriname,
 2013,Belgium,Slovakia,1
-2013,Belgium,Syrian Arab Rep.,1987
+2013,Belgium,"Syrian Arab Rep.",1987
 2013,Belgium,Chad,39
 2013,Belgium,Togo,143
 2013,Belgium,Tajikistan,5
 2013,Belgium,Turkmenistan,1
 2013,Belgium,Tunisia,5
 2013,Belgium,Turkey,472
-2013,Belgium,Tanzania,55
+2013,Belgium,"United Rep. of Tanzania",55
 2013,Belgium,Uganda,18
 2013,Belgium,Ukraine,33
-2013,Belgium,United States of America,3
+2013,Belgium,"United States of America",3
 2013,Belgium,Uzbekistan,23
-2013,Belgium,Venezuela,
-2013,Belgium,Viet Nam,15
+2013,Belgium,"Venezuela (Bolivarian Republic of)",
+2013,Belgium,"Viet Nam",15
 2013,Belgium,Stateless,16
 2013,Belgium,Various/Unknown,2435
 2013,Belgium,Yemen,6
-2013,Belgium,South Africa,2
+2013,Belgium,"South Africa",2
 2013,Belgium,Zimbabwe,5
 2014,Belgium,Afghanistan,5038
 2014,Belgium,Angola,63
@@ -1789,29 +1793,29 @@ year,country,origin,refugees
 2014,Belgium,Burundi,305
 2014,Belgium,Belgium,
 2014,Belgium,Benin,27
-2014,Belgium,Burkina Faso,55
+2014,Belgium,"Burkina Faso",55
 2014,Belgium,Bangladesh,13
 2014,Belgium,Bulgaria,18
-2014,Belgium,Bosnia and Herzegovina,44
+2014,Belgium,"Bosnia and Herzegovina",44
 2014,Belgium,Belarus,41
-2014,Belgium,Bolivia,*
+2014,Belgium,"Bolivia (Plurinational State of)",*
 2014,Belgium,Bhutan,*
-2014,Belgium,Central African Rep.,19
+2014,Belgium,"Central African Rep.",19
 2014,Belgium,Canada,*
 2014,Belgium,Switzerland,*
 2014,Belgium,Chile,19
 2014,Belgium,China,1051
-2014,Belgium,Ivory Coast,215
+2014,Belgium,"Côte d'Ivoire",215
 2014,Belgium,Cameroon,361
-2014,Belgium,Dem. Rep. of the Congo,1100
+2014,Belgium,"Dem. Rep. of the Congo",1100
 2014,Belgium,Congo,30
 2014,Belgium,Colombia,28
 2014,Belgium,Cuba,*
-2014,Belgium,Czech Rep.,*
+2014,Belgium,"Czech Rep.",*
 2014,Belgium,Germany,*
 2014,Belgium,Djibouti,146
 2014,Belgium,Denmark,*
-2014,Belgium,Dominican Rep.,
+2014,Belgium,"Dominican Rep.",
 2014,Belgium,Algeria,37
 2014,Belgium,Egypt,29
 2014,Belgium,Eritrea,130
@@ -1819,13 +1823,13 @@ year,country,origin,refugees
 2014,Belgium,Ethiopia,80
 2014,Belgium,France,*
 2014,Belgium,Gabon,9
-2014,Belgium,United Kingdom,*
+2014,Belgium,"United Kingdom",*
 2014,Belgium,Georgia,36
 2014,Belgium,Ghana,29
 2014,Belgium,Guinea,2550
 2014,Belgium,Gambia,19
 2014,Belgium,Guinea-Bissau,10
-2014,Belgium,Equatorial Guinea,*
+2014,Belgium,"Equatorial Guinea",*
 2014,Belgium,Greece,*
 2014,Belgium,Guatemala,10
 2014,Belgium,Honduras,
@@ -1833,7 +1837,7 @@ year,country,origin,refugees
 2014,Belgium,Haiti,*
 2014,Belgium,Hungary,19
 2014,Belgium,India,10
-2014,Belgium,Iran,639
+2014,Belgium,"Iran (Islamic Rep. of)",639
 2014,Belgium,Iraq,3357
 2014,Belgium,Israel,9
 2014,Belgium,Italy,*
@@ -1843,19 +1847,19 @@ year,country,origin,refugees
 2014,Belgium,Kyrgyzstan,66
 2014,Belgium,Cambodia,*
 2014,Belgium,Kuwait,8
-2014,Belgium,Laos,8
+2014,Belgium,"Lao People's Dem. Rep.",8
 2014,Belgium,Lebanon,77
 2014,Belgium,Liberia,20
 2014,Belgium,Libya,6
-2014,Belgium,Sri Lanka,336
+2014,Belgium,"Sri Lanka",336
 2014,Belgium,Lesotho,
 2014,Belgium,Lithuania,*
 2014,Belgium,Latvia,*
 2014,Belgium,Morocco,37
-2014,Belgium,Rep. of Moldova,*
+2014,Belgium,"Rep. of Moldova",*
 2014,Belgium,Madagascar,*
 2014,Belgium,Mexico,*
-2014,Belgium,Macedonia,75
+2014,Belgium,"The former Yugoslav Republic of Macedonia",75
 2014,Belgium,Mali,44
 2014,Belgium,Myanmar,15
 2014,Belgium,Montenegro,*
@@ -1871,36 +1875,36 @@ year,country,origin,refugees
 2014,Belgium,Pakistan,130
 2014,Belgium,Peru,*
 2014,Belgium,Poland,62
-2014,Belgium,North Korea,66
+2014,Belgium,"Dem. People's Rep. of Korea",66
 2014,Belgium,Palestinian,128
 2014,Belgium,Romania,23
-2014,Belgium,Russian Federation,2193
+2014,Belgium,"Russian Federation",2193
 2014,Belgium,Rwanda,873
 2014,Belgium,Sudan,135
 2014,Belgium,Senegal,345
-2014,Belgium,Sierra Leone,37
-2014,Belgium,El Salvador,15
+2014,Belgium,"Sierra Leone",37
+2014,Belgium,"El Salvador",15
 2014,Belgium,Somalia,625
-2014,Belgium,Serbia and Kosovo,686
-2014,Belgium,Sao Tome and Principe,
+2014,Belgium,"Serbia and Kosovo (S/RES/1244 (1999))",686
+2014,Belgium,"Sao Tome and Principe",
 2014,Belgium,Suriname,
 2014,Belgium,Slovakia,*
-2014,Belgium,Syrian Arab Rep.,2620
+2014,Belgium,"Syrian Arab Rep.",2620
 2014,Belgium,Chad,36
 2014,Belgium,Togo,167
 2014,Belgium,Tajikistan,5
 2014,Belgium,Tunisia,16
 2014,Belgium,Turkey,504
-2014,Belgium,Tanzania,58
+2014,Belgium,"United Rep. of Tanzania",58
 2014,Belgium,Uganda,23
 2014,Belgium,Ukraine,33
-2014,Belgium,United States of America,*
+2014,Belgium,"United States of America",*
 2014,Belgium,Uzbekistan,25
-2014,Belgium,Venezuela,*
-2014,Belgium,Viet Nam,16
+2014,Belgium,"Venezuela (Bolivarian Republic of)",*
+2014,Belgium,"Viet Nam",16
 2014,Belgium,Stateless,31
 2014,Belgium,Various/Unknown,3009
 2014,Belgium,Yemen,7
-2014,Belgium,South Africa,*
+2014,Belgium,"South Africa",*
 2014,Belgium,Zambia,
 2014,Belgium,Zimbabwe,6

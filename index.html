@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-   
+
 <head>
     <meta charset="utf-8">
     <title>Refugees</title>
@@ -8,16 +8,17 @@
     <script src="d3.js" charset="utf-8"></script>
     <!-- for the tooltip -->
     <script src="d3tooltip.js" charset="utf-8" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" >
 
 <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <a class="navbar-brand" href="#">Project refugee</a>
       <ul class="nav navbar-nav">
@@ -40,64 +41,29 @@
         <div class="page-header"><p id="title">Graph number of refugees from 1951 till 2014</p></div>
         <div id="graphdiv"/div>
     </div>
-    
-         
-    <div class="row col-md-12 top-buffer">   
-         
-    <div class="col-md-6 ">
-         <p id="title">Where does the refugees come from?</p>
-        <table class="table table-hover" id="refugeesTable">
-            <thead>
-                <tr>
-                    <th class="table-header">
-                        <p>Top 10 countries where the refugees of year</p> <p id="yearRefugees"/><p>come from: </p> </th>
-                </tr>
-            </thead>
+
+
+    <div class="row col-md-12 top-buffer">
+
+    <div ng-app="myApp" ng-controller="refugeesController" class="col-md-6 ">
+      <p id="title">Where does the refugees come from?</p>
+      <table class="table table-hover" id="refugeesTable">
+        <thead>
             <tr>
-                <td>Belgium
-                </td>
+                <th class="table-header">
+                    <p>Top countries where the refugees of year <span id="yearRefugees"/></p>
+                    <p>come from: </p>
+                </th>
+                <th/>
             </tr>
-            <tr>
-                <td>Syria
-                </td>
-            </tr>
-            <tr>
-                <td>Belarus
-                </td>
-            </tr>
-            <tr>
-                <td>Egypt
-                </td>
-            </tr>
-            <tr>
-                <td>Italy
-                </td>
-            </tr>
-            <tr>
-                <td>Turkey
-                </td>
-            </tr>
-            <tr>
-                <td>Irak
-                </td>
-            </tr>
-            <tr>
-                <td>Greece
-                </td>
-            </tr>
-            <tr>
-                <td>France
-                </td>
-            </tr>
-            <tr>
-                <td>Spain
-                </td>
-            </tr>
-        </table> 
+        </thead>
+        <tr ng-repeat="x in refugees | orderBy:'-refugees'">
+          <td>{{$index + 1}}. {{ x.origin }}</td>
+          <td>{{ x.refugees }}</td>
+        </tr>
+      </table>
     </div>
-        
-             
-        
+
     <div class="col-md-6">
         <p id="title">See the difference in refugees between two years</p>
         <table class="table">
@@ -111,7 +77,7 @@
             <tr>
                 <td colspan="2"><button id="betweenYears" class="btn btn-primary" >See difference between years </button></td>
             </tr>
-            
+
             <tr>
                 <td><p>The difference between the two years is: </p></td>
                 <td><p id="result"/></td>
@@ -119,17 +85,17 @@
 
         </table>
     </div>
-        
-        </div>  
-    
+
+        </div>
+
       </div><!-- /.container -->
 
 
-        
-    
-    
-        
-        
+
+
+
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -138,142 +104,170 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    </div>  
+    </div>
 </body>
-    
+
+<!-- <script>
+var app = angular.module('myApp', []);
+app.controller('refugeesController', function($scope, $http) {
+    $scope.refugees = {};//[{Year: "1951", Country: "Belgium", Origin: "Various/Unknown", Refugees: "55000"},{Year: "1951", Country: "Belgium", Origin: "Various/Unknown", Refugees: "55000"}];
+});
+</script> -->
+
     <script>
-        //Set margins
-        var margin = {top:30, right:30, bottom:150, left:150},
-            width  = 3200,
-            height = 500,
-            padding = 100;
-  
-        //add object to body where graph will be
-        var svg = d3.select("#graphdiv")
-            .append("svg")
-            .attr("viewBox", "0 0 " + width + " " + height);
-        
-   
-        //set scales x and y axis
-        var yScale = d3.scale.linear()
-            .range([height - margin.top - margin.bottom, 0]);
 
-        var xScale = d3.scale.ordinal()
-            .rangeRoundBands([0, width - margin.right - margin.left], .1);
-        
-        var xAxis = d3.svg.axis()
-            .scale(xScale)
-            .orient("bottom");
-        
-        var yAxis = d3.svg.axis()
-            .scale(yScale)
-            .orient("left")
-            .ticks(10);
+        var app = angular.module('myApp', []);
 
-        //data out of file
-        d3.csv("valuesVisualisationCSV.csv", function(error, data){
-            
-            data = data.map(function(d){ 
-             d["Belgium"] = +d["Belgium"]; 
-            return d;
-           });     
-          
-        //yscale's domain is from zero to the maximum refugees
-     yScale.domain([0, d3.max(data, function(d){ return d["Belgium"]; })]);
+        app.controller('refugeesController', function($scope, $http) {
+            $scope.refugees = {};
 
-        //xscale is years
-       xScale.domain(data.map(function(d){ return d["jaar"]; }));
-        var tip = d3.tip()
-            .attr('class', 'd3-tip')
-            .offset([-10, 0])
-            .html(function(d) {
-                return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.Belgium + "</span>";
-        })
-        
-        //for the hover
-        svg.call(tip);  
-            
-        //ad the actual bars
-        svg.append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-            .selectAll(".bar")
-            .data(data)
-            .enter()
-            .append("rect")
-            .attr("class", "bar")
-            .attr("x", function(d){ return xScale(d["jaar"]); })
-            .attr("y", function(d){ return yScale(d["Belgium"]); })
-            .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["Belgium"]); })
-            .attr("width", "40px" )
-            .on('mouseover', tip.show)
-            .on('mouseout', tip.hide)
-            .on('click', function(d, i){
-                console.log(d.jaar);
-                var test = d3.select("#yearRefugees");
-                test.text(d.jaar);
+            var refugeesPerCountry;
+            // d3.csv("refugees.csv").get(function(error, data) { console.log(data); refugeesPerCountry = data;});
+            d3.csv("refugees.csv", function(data){
+              data.forEach(function(d){ d['year'] = +d['year']; d['refugees'] = +d['refugees']; });
+              refugeesPerCountry = data;
+              console.log(data);
+            });
+
+            //Set margins
+            var margin = {top:30, right:30, bottom:150, left:150},
+                width  = 3200,
+                height = 500,
+                padding = 100;
+
+            //add object to body where graph will be
+            var svg = d3.select("#graphdiv")
+                .append("svg")
+                .attr("viewBox", "0 0 " + width + " " + height);
+
+
+            //set scales x and y axis
+            var yScale = d3.scale.linear()
+                .range([height - margin.top - margin.bottom, 0]);
+
+            var xScale = d3.scale.ordinal()
+                .rangeRoundBands([0, width - margin.right - margin.left], .1);
+
+            var xAxis = d3.svg.axis()
+                .scale(xScale)
+                .orient("bottom");
+
+            var yAxis = d3.svg.axis()
+                .scale(yScale)
+                .orient("left")
+                .ticks(10);
+
+            //data out of file
+            d3.csv("valuesVisualisationCSV.csv", function(error, data){
+
+                data = data.map(function(d){
+                 d["Belgium"] = +d["Belgium"];
+                return d;
+               });
+
+            //yscale's domain is from zero to the maximum refugees
+         yScale.domain([0, d3.max(data, function(d){ return d["Belgium"]; })]);
+
+            //xscale is years
+           xScale.domain(data.map(function(d){ return d["jaar"]; }));
+            var tip = d3.tip()
+                .attr('class', 'd3-tip')
+                .offset([-10, 0])
+                .html(function(d) {
+                    return "<strong>Number of refugees:</strong> <span style='color:red'>" + d.Belgium + "</span>";
             })
-            
-        //adding y axis to the left of the chart
-        svg.append("g")
-            .attr("class", "y axis")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-            .call(yAxis);
 
-        //adding x axis to the bottom of chart
-        svg.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
-            .call(xAxis)
-            .selectAll("text")  
-            .style("text-anchor", "middle")
-            .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-            .attr("transform", "rotate(-90)" )
-            .style("text-anchor", "end");   
-            
-        //give title to axes   
-        svg.append("text")
-            .attr("class", "labelGraph")
-            .attr("text-anchor", "end")
-            .attr("x", width / 2)
-            .attr("y", height)
-            .text("Year");
+            //for the hover
+            svg.call(tip);
 
-        svg.append("text")
-            .attr("class", "labelGraph")
-            .attr("text-anchor", "end")
-            .attr("y", 20)
-            .attr("dy", ".75em")
-            .attr("transform", "translate("+ (padding / 40 - 20) +","+(height / 50 )+")rotate(-90)") 
-            .text("Number of refugees")
+            //ad the actual bars
+            svg.append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .selectAll(".bar")
+                .data(data)
+                .enter()
+                .append("rect")
+                .attr("class", "bar")
+                .attr("x", function(d){ return xScale(d["jaar"]); })
+                .attr("y", function(d){ return yScale(d["Belgium"]); })
+                .attr("height", function(d){ return height- margin.top - margin.bottom - yScale(d["Belgium"]); })
+                .attr("width", "40px" )
+                .on('mouseover', tip.show)
+                .on('mouseout', tip.hide)
+                .on('click', function(d, i){
+                    console.log(d.jaar);
+                    var test = d3.select("#yearRefugees");
+                    test.text(d.jaar);
+                    // filter refugeesPerCountry, only those of the selected year!
+                    $scope.refugees = refugeesPerCountry.filter(function (el) {
+                                        return el.year == d.jaar;
+                                      });
+                    $scope.$apply();
+                })
+
+            //adding y axis to the left of the chart
+            svg.append("g")
+                .attr("class", "y axis")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .call(yAxis);
+
+            //adding x axis to the bottom of chart
+            svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(" + margin.left + "," + (height - margin.bottom) + ")")
+                .call(xAxis)
+                .selectAll("text")
+                .style("text-anchor", "middle")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                .attr("transform", "rotate(-90)" )
+                .style("text-anchor", "end");
+
+            //give title to axes
+            svg.append("text")
+                .attr("class", "labelGraph")
+                .attr("text-anchor", "end")
+                .attr("x", width / 2)
+                .attr("y", height)
+                .text("Year");
+
+            svg.append("text")
+                .attr("class", "labelGraph")
+                .attr("text-anchor", "end")
+                .attr("y", 20)
+                .attr("dy", ".75em")
+                .attr("transform", "translate("+ (padding / 40 - 20) +","+(height / 50 )+")rotate(-90)")
+                .text("Number of refugees")
 
 
-        //add text labels to the top of each bar
-        svg.append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-            .selectAll(".textlabel")
-            .data(data)
-            .enter()
-            .append("text")
-            .attr("class", "textlabel")
-            .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
-            .attr("y", function(d){ return yScale(d["Belgium"]) - 3; })
+            //add text labels to the top of each bar
+            svg.append("g")
+                .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+                .selectAll(".textlabel")
+                .data(data)
+                .enter()
+                .append("text")
+                .attr("class", "textlabel")
+                .attr("x", function(d){ return xScale(d["jaar"]) + (xScale.rangeBand()/2); })
+                .attr("y", function(d){ return yScale(d["Belgium"]) - 3; })
 
-        //graph title
-        svg.append("g")
-            .attr("transform", "translate(" + (width/2) + ", 45)")
-            .append("text")
-            .text("Number of refugees in Belgium during the years")
-            .style({"text-anchor":"middle", "font-family":"Verdana", "font-weight":"800", "font-size":"50px"});
-        })
+            //graph title
+            svg.append("g")
+                .attr("transform", "translate(" + (width/2) + ", 45)")
+                .append("text")
+                .text("Number of refugees in Belgium during the years")
+                .style({"text-anchor":"middle", "font-family":"Verdana", "font-weight":"800", "font-size":"50px"});
+            })
+
+        });
     </script>
 
     <script>
-        
+
         //script for the dropdownboxes
-        
-        d3.csv("valuesVisualisationCSV.csv", function(error, data){  
-            
+
+        d3.csv("valuesVisualisationCSV.csv", function(error, data){
+
             function fillYears( dropDownName){
                 var self = this;
                 var dropDown = d3.select(dropDownName)
@@ -287,67 +281,24 @@
                     .text(function(d) {return d.jaar;});
             return dropDown;
             }
-            
+
             var  year1 = fillYears("#year1");
             var year2 = fillYears("#year2");
-            
+
             var result = d3.select("#result");
-            
+
             var button = d3.select("#betweenYears")
                 .on("click", function(){
-                    
-                    var value1 = d3.select("#year1").node().value; 
+
+                    var value1 = d3.select("#year1").node().value;
                     var value2 = d3.select("#year2").node().value;
                     //niet zeker van deze formule
                     var difference = value1 / value2 ;
                     console.log("Add Market button clicked " + difference);
                     result.text(difference)
                             })
-                
-        });  
+
+        });
+
     </script>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
