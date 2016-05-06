@@ -46,26 +46,29 @@
 
     <div class="row col-md-12 top-buffer">
 
-    <div ng-app="myApp" ng-controller="refugeesController" class="col-md-6 ">
+    <div ng-app="myApp" ng-controller="refugeesController" class="col-md-8 ">
       <p id="title">Where do the refugees come from?</p>
+
       <table class="table table-hover" id="refugeesTable">
         <thead>
             <tr>
                 <th class="table-header">
                     <p>Top countries where the refugees of year <span id="yearRefugees"/></p>
-                    <p>come from: </p>
+                    <p>come from and why they come: </p>
                 </th>
+                <th/>
                 <th/>
             </tr>
         </thead>
         <tr ng-repeat="x in refugees | orderBy:'-refugees'">
           <td>{{$index + 1}}. {{ x.origin }}</td>
           <td>{{ x.refugees }}</td>
+          <td>{{ x.events }}</td>
         </tr>
       </table>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <p id="title">See the difference in refugees between two years</p>
         <table class="table">
 
@@ -80,7 +83,7 @@
             </tr>
 
             <tr>
-                <td><p>The difference between the two years is: </p></td>
+                <td><p>The difference between <br>the two years is: </p></td>
                 <td><p id="result"/></td>
             </tr>
 
@@ -117,7 +120,10 @@
 
             var refugeesPerCountry;
             d3.csv("refugees.csv", function(data){
-              data.forEach(function(d){ d['year'] = +d['year']; d['refugees'] = +d['refugees']; });
+              data.forEach(function(d){ d['year'] = +d['year']; 
+                                        d['refugees'] = +d['refugees'];
+                                        d['events'] = d['events'];
+                                      });
               refugeesPerCountry = data;
               console.log(data);
             });
