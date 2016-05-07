@@ -101,3 +101,12 @@ th{
 svg:not(:root) {
     overflow: visible;
 }
+
+/* Style About */
+.about{
+    width: 50%;
+}
+.aboutImg{    
+    width: 45%;
+    float: right;
+}
