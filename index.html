@@ -60,7 +60,7 @@
                 <th/>
             </tr>
         </thead>
-        <tr ng-repeat="x in refugees | orderBy:'-refugees'">
+        <tr ng-repeat="x in refugees | orderBy:'-refugees'" ng-if="x.refugees > 0">
           <td>{{$index + 1}}. {{ x.origin }}</td>
           <td>{{ x.refugees }}</td>
           <td>{{ x.events }}</td>
@@ -120,7 +120,7 @@
 
             var refugeesPerCountry;
             d3.csv("refugees.csv", function(data){
-              data.forEach(function(d){ d['year'] = +d['year']; 
+              data.forEach(function(d){ d['year'] = +d['year'];
                                         d['refugees'] = +d['refugees'];
                                         d['events'] = d['events'];
                                       });
