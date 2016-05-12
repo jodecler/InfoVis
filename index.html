@@ -20,7 +20,7 @@
 <body>
 
     <nav class="navbar navbar-fixed-top navbar-inverse">
-      <a class="navbar-brand" href="#">Project refugee</a>
+      <a class="navbar-brand" href="index.html">Project refugee</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -60,7 +60,7 @@
                 <th/>
             </tr>
         </thead>
-        <tr ng-repeat="x in refugees | orderBy:'-refugees'">
+        <tr ng-repeat="x in refugees | orderBy:'-refugees'" ng-if="x.refugees > 0">
           <td>{{$index + 1}}. {{ x.origin }}</td>
           <td>{{ x.refugees }}</td>
           <td>{{ x.events }}</td>
@@ -86,6 +86,10 @@
                 <td><p>The difference between <br>the two years is: </p></td>
                 <td><p id="result"/></td>
             </tr>
+            <tr>
+                <td colspan="2"><p id="valueResults"></p>
+                </td>
+            </tr>
 
         </table>
     </div>
@@ -107,12 +111,18 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  
     </div>
 </body>
 
     <script>
-
+        //tutorials used for bar graph
+        // https://www.youtube.com/user/d3Vienno 
+        // http://bl.ocks.org/d3noob/8952219
+        // https://bl.ocks.org/mbostock/3887051
+        // http://bl.ocks.org/officeofjane/7315455
+        
+        
         var app = angular.module('myApp', []);
 
         app.controller('refugeesController', function($scope, $http) {
@@ -120,12 +130,11 @@
 
             var refugeesPerCountry;
             d3.csv("refugees.csv", function(data){
-              data.forEach(function(d){ d['year'] = +d['year']; 
+              data.forEach(function(d){ d['year'] = +d['year'];
                                         d['refugees'] = +d['refugees'];
                                         d['events'] = d['events'];
                                       });
               refugeesPerCountry = data;
-              console.log(data);
             });
 
             //Set margins
@@ -194,7 +203,6 @@
                 .on('mouseover', tip.show)
                 .on('mouseout', tip.hide)
                 .on('click', function(d, i){
-                    console.log(d.jaar);
                     var test = d3.select("#yearRefugees");
                     test.text(d.jaar);
                     // filter refugeesPerCountry, only those of the selected year!
@@ -263,7 +271,6 @@
     <script>
 
         //script for the dropdownboxes
-
         d3.csv("valuesVisualisationCSV.csv", function(error, data){
 
             function fillYears( dropDownName){
@@ -282,18 +289,15 @@
 
             var  year1 = fillYears("#year1");
             var year2 = fillYears("#year2");
-
             var result = d3.select("#result");
-
             var button = d3.select("#betweenYears")
                 .on("click", function(){
-
+                    
                     var value1 = d3.select("#year1").node().value;
                     var value2 = d3.select("#year2").node().value;
-                    //niet zeker van deze formule
-                    var difference = value1 / value2 ;
-                    console.log("Add Market button clicked " + difference);
-                    result.text(difference)
+                    var difference = (value1  - value2)/  value1  ;
+                    result.text((difference * 100).toFixed(4) + "%");
+            d3.select("#valueResults").text("This means that in year " + value1 + " their are about " +  (difference * 100).toFixed(4) + "%" + " more or less refugees (depending on the + or - sign) than in year " + value2 + ".");
                             })
 
         });
